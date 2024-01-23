@@ -1,6 +1,6 @@
-import React from 'react';
-import img from '../images/Web-developer.svg';
-import { Link } from 'react-router-dom';
+import React from "react";
+import img from "../images/Web-developer.svg";
+import { Link } from "react-router-dom";
 
 const Intro = () => {
   return (
@@ -22,21 +22,25 @@ const Intro = () => {
             data-aos="zoom-in"
             data-aos-delay="500"
           >
-            <h3 className="text-3xl  text-[#101084] font-bold">
-              Tentang JNSF
-            </h3>
+            <h3 className="text-3xl  text-[#101084] font-bold">Tentang JNSF</h3>
             <div>
               <p className="my-3 text-xl text-gray-600 font-semibold">
-                Our team is well vast in software development and is
-                ready to help develop the applications of your choice.
+                Indonesian Young Scientist Association (IYSA) bekerja sama
+                dengan Indonesia National Institute for Life Sciences (i3L)
+                mengadakan kompetisi ilmiah bernama “Jakarta National Science
+                Fair” untuk pertama kalinya JNSF diselenggarakan dalam kompetisi
+                situasi hybrid (Online dan Offline).
               </p>
             </div>
 
             <div>
               <p className="my-3 text-xl text-gray-600 font-semibold">
-                We take responsibility for building custom software
-                solutions that caters for automation of your business
-                processes and improve efficiency.
+                JNSF muncul sebagai platform bergengsi yang didedikasikan untuk
+                mendorong inovasi dan kolaborasi ilmiah dalam skala global.
+                Menyadari betapa pentingnya kemajuan ilmu pengetahuan dalam
+                mengatasi tantangan kontemporer, JNSF berdiri sebagai mercusuar
+                bagi ilmuwan peneliti, dan inovator untuk berkumpul dan berbagi
+                penemuan inovatif mereka.
               </p>
             </div>
             {/* <Link to="/contact" className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-2 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0 group">
