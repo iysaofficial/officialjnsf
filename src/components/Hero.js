@@ -30,7 +30,7 @@ const Hero = () => {
               <h1 className="mb-5 mt-1 md:text-5xl text-3xl font-bold text-[#101084]">
                 Fair 2024
               </h1>
-              {/* <div className="text-xl font-semibold tracking-tight mb-5 text-gray-500">We are a team of highly motivated and skilled developers dedicated to delivering only the best software.</div> */}
+              {/* <d addName="text-xl font-semibold tracking-tight mb-5 text-gray-500">We are a team of highly motivated and skilled developers dedicated to delivering only the best software.</div> */}
               <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">
                 <a
                   href="https://registrasi-jnsf-2024.vercel.app/"
