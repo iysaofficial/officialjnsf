@@ -90,12 +90,12 @@ const Contact = () => {
           data-aos="zoom-in"
         >
           <form
-            action="https://formspree.io/f/xzbnbqwg"
+            action="https://formspree.io/f/xvoeewgj"
             method="POST"
           >
             <div className="w-full bg-white p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
               <div className="flex">
-                <h1 className="font-bold text-center lg:text-left text-green-900 uppercase text-4xl">
+                <h1 className="font-bold text-center lg:text-left text-blue-900 uppercase text-4xl">
                   Kontak
                 </h1>
               </div>
@@ -185,7 +185,7 @@ const Contact = () => {
               </div>
             </div>
           </form>
-          <div className="w-full  lg:-mt-96 lg:w-2/6 px-8 py-6 ml-auto bg-green-900 rounded-2xl">
+          <div className="w-full  lg:-mt-96 lg:w-2/6 px-8 py-6 ml-auto bg-blue-900 rounded-2xl">
             <div className="flex flex-col text-white">
               <div className="flex my-4 w-2/3 lg:w-3/4">
                 <div className="flex flex-col">
