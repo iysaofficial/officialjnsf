@@ -16,16 +16,24 @@ const Timevenue = () => {
               className="rounded-t float-right mb-5"
               src="./assets/logo/venue.jpg"
             />
+            <a className="font-bold">
+              Lokasi Venue : 
+              <a
+                href="https://maps.app.goo.gl/vh15YCjxTGiJY7Gy9"
+                target="_blank" 
+              >
+                 Klik Disini
+              </a>
+            </a>
           </div>
 
-            <div className="lg:w-1/2 flex flex-col lg:mx-4 justify-center lg:w-1/2  px-8">
-              <img
-                alt="card img"
-                className="rounded-t float-right mb-5"
-                src="./assets/logo/time.jpg"
-              />
-            </div>
-
+          <div className="lg:w-1/2 flex flex-col lg:mx-4 justify-center lg:w-1/2  px-8">
+            <img
+              alt="card img"
+              className="rounded-t float-right mb-5"
+              src="./assets/logo/time.jpg"
+            />
+          </div>
         </div>
       </div>
     </>
