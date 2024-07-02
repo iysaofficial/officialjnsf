@@ -33,10 +33,10 @@ const Hero = () => {
               {/* <d addName="text-xl font-semibold tracking-tight mb-5 text-gray-500">We are a team of highly motivated and skilled developers dedicated to delivering only the best software.</div> */}
               <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">
                 <a
-                  href="https://registrasi-jnsf-2024.vercel.app/"
+                  href="/"
                   className="text-white bg-[#101084] hover:bg-blue-900 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0"
                 >
-                  Buka Pendaftaran 
+                  Tutup Pendaftaran 
                   <svg
                     className="w-4 h-4 ml-1"
                     xmlns="http://www.w3.org/2000/sv"
