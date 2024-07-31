@@ -31,6 +31,14 @@ const NavLinks = () => {
         Kontak
       </HashLink>
       <a
+        href="https://drive.google.com/file/d/1ceYrbWn0jfjXm6yboRRxBc_pX99aXeTQ/view?usp=sharing"
+        target="_blank"
+        className="px-4 font-extrabold text-gray-500 hover:text-[#101084]"
+        smooth
+      >
+        Press Release
+      </a>
+      <a
         href="https://drive.google.com/file/d/16DyTlLzNwJEc4HTXIzcvoCVLXP5hHMyl/view?usp=sharing"
         target="_blank"
         className="text-white bg-[#101084] hover:bg-blue-900 inline-flex items-center justify-center w-auto px-6 py-3 shadow-xl rounded-xl"
