@@ -6,6 +6,7 @@ import Hero from '../components/Hero';
 import Intro from '../components/Intro';
 // import Portfolio from '../components/Portfolio';
 import Services from '../components/Services';
+import Aftermovie from '../components/Aftermovie';
 
 import Timevenue from '../components/Timevenue';
 
@@ -16,6 +17,7 @@ const Home = () => {
             <Hero />
             <Intro />
             <Timevenue />
+            <Aftermovie />
             <Services />
             {/* <Portfolio /> */}
             <Clients />
