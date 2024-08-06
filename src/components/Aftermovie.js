@@ -162,7 +162,7 @@ const Aftermovie = () => {
                   <h2 className="text-2xl">After Movie JNSF</h2>
                   <p>
                     After Movie Adalah sebuah video dokumentasi dari kegiatan
-                    event dari rangkaian oepning sampai dengan awarding pada
+                    event dari rangkaian opening sampai dengan awarding pada
                     event tersebut
                   </p>
                 </div>
