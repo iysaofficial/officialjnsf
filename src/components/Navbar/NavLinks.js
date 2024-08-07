@@ -1,5 +1,5 @@
-import React from 'react';
-import { HashLink } from 'react-router-hash-link';
+import React from "react";
+import { HashLink } from "react-router-hash-link";
 
 const NavLinks = () => {
   return (
@@ -37,6 +37,12 @@ const NavLinks = () => {
         to="/ListofWinner"
       >
         List of Winner
+      </HashLink>
+      <HashLink
+        className="px-4 font-extrabold text-gray-500 hover:text-[#101084]"
+        to="/CertificateSupervisor"
+      >
+        Certificate
       </HashLink>
       <a
         href="https://drive.google.com/drive/folders/1QGL9JxavpwplBKO-NNhHrDg3wjPaGBUG?usp=sharing"

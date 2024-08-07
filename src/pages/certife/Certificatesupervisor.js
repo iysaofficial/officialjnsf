@@ -1,12 +1,12 @@
 import React from "react";
-import NavBar from "../components/Navbar/NavBar";
-import Footer from "../components/Footer";
-import img from "../images/web.svg";
-import img2 from "../images/app.svg";
-import img3 from "../images/hosting.svg";
-import img4 from "../images/consultation.svg";
+import NavBar from "../../components/Navbar/NavBar";
+import Footer from "../../components/Footer";
+import img from "../../images/web.svg";
+import img2 from "../../images/app.svg";
+import img3 from "../../images/hosting.svg";
+import img4 from "../../images/consultation.svg";
 
-const LoW = () => {
+const Certificatesupervisor = () => {
   return (
     <>
       <div>
@@ -16,7 +16,7 @@ const LoW = () => {
         <section data-aos="zoom-in-down mt-8">
           <div className="my-4 py-4">
             <h2 className="my-2 text-center text-3xl text-[#101084] uppercase font-bold">
-              DAFTAR PEMENANG
+              Sertifikat Supervisor
             </h2>
 
             <div className="flex justify-center">
@@ -31,17 +31,22 @@ const LoW = () => {
             <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-5">
               <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
                 <div className="m-2 text-justify text-sm">
-                  <img
+                  {/* <img
                     alt="card img"
                     className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out"
                     src="./assets/logo/new.jpg"
-                  />
+                  /> */}
                   <h2 className="font-semibold my-4 text-2xl text-center">
-                    Daftar Pemenang 2024
+                    Sertifikat Supervisor 2024
                   </h2>
                   <a className="font-bold">
                     {/* Lokasi Venue: {" "}   */}
-                    <a href="/Winner2024">Klik Disini</a>
+                    <a
+                      href="https://drive.google.com/drive/folders/1r7--ONb6eGKwiuIIQVr3_XsqLCqq0-5V?usp=drive_link"
+                      target="_blank"
+                    >
+                      Klik Disini
+                    </a>
                   </a>
                 </div>
               </div>
@@ -153,4 +158,4 @@ const LoW = () => {
   );
 };
 
-export default LoW;
+export default Certificatesupervisor;

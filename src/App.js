@@ -18,6 +18,9 @@ import LoW from './pages/LoW';
 import Spesial from './pages/listwinner/Spesial';
 import OfflineElement from './pages/listwinner/OfflineElement';
 
+// certificate
+import Certificatesupervisor from './pages/certife/Certificatesupervisor';
+
 import { useDocTitle } from './components/CustomHook';
 import ScrollToTop from './components/ScrollToTop';
 import OfflineSecond from './pages/listwinner/OfflineSecond';
@@ -27,6 +30,7 @@ import OnlineSecond from './pages/listwinner/OnlineSecond';
 import OnlineUniv from './pages/listwinner/OnlineUniv';
 import Offline2024 from './pages/listwinner/Offline2024';
 import Online2024 from './pages/listwinner/Online2024';
+
 
 function App() {
   useEffect(() => {
@@ -58,18 +62,14 @@ function App() {
             <Route path="/Winner2024" element={<Spesial />} />
             <Route path="/Offline2024" element={<Offline2024 />} />
             <Route path="/Online2024" element={<Online2024 />} />
-
-
-
-
-
-
             <Route path="/ElementaryOffline" element={<OfflineElement />} />
             <Route path="/SecondaryOffline" element={<OfflineSecond />} />
             <Route path="/UniversitasOffline" element={<OfflineUniv/>} />
             <Route path="/ElementaryOnline" element={<OnlineElement/>} />
             <Route path="/SecondaryOnline" element={<OnlineSecond/>} />
             <Route path="/UniversitasOnline" element={<OnlineUniv/>} />
+
+            <Route path="/CertificateSupervisor" element={<Certificatesupervisor/>} />
           </Routes>
         </ScrollToTop>
       </Router>
