@@ -18,14 +18,6 @@ const NavLinks = () => {
       >
         Tentang
       </HashLink>
-      <a
-        href="https://drive.google.com/file/d/1ceYrbWn0jfjXm6yboRRxBc_pX99aXeTQ/view?usp=sharing"
-        target="_blank"
-        className="px-4 font-extrabold text-gray-500 hover:text-[#101084]"
-        smooth
-      >
-        Press Release
-      </a>
       <HashLink
         className="px-4 font-extrabold text-gray-500 hover:text-[#101084]"
         to="/Faq"
@@ -43,6 +35,12 @@ const NavLinks = () => {
         to="/CertificateSupervisor"
       >
         Certificate
+      </HashLink>
+      <HashLink
+        className="px-4 font-extrabold text-gray-500 hover:text-[#101084]"
+        to="/Mediacoverage"
+      >
+        Media Coverage
       </HashLink>
       <a
         href="https://drive.google.com/drive/folders/1QGL9JxavpwplBKO-NNhHrDg3wjPaGBUG?usp=sharing"

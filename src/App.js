@@ -31,6 +31,10 @@ import OnlineUniv from './pages/listwinner/OnlineUniv';
 import Offline2024 from './pages/listwinner/Offline2024';
 import Online2024 from './pages/listwinner/Online2024';
 
+import Berita2024 from './pages/berita/berita2024/Berita2024';
+import News2024 from './pages/berita/News2024';
+import MediaCoverage from './pages/MediaCoverage';
+
 
 function App() {
   useEffect(() => {
@@ -70,6 +74,9 @@ function App() {
             <Route path="/UniversitasOnline" element={<OnlineUniv/>} />
 
             <Route path="/CertificateSupervisor" element={<Certificatesupervisor/>} />
+            <Route path="/Mediacoverage" element={<MediaCoverage/>} />
+            <Route path="/2024" element={<News2024/>} />
+            <Route path="/News2024" element={<Berita2024/>} />
           </Routes>
         </ScrollToTop>
       </Router>
