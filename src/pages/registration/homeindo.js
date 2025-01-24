@@ -1,6 +1,6 @@
 import Navigation from "../../components/Navbar/NavBar";
 import Footer from "../../components/Footer";
-import { indonesiaOnlineTerms, indonesiaOfflineTerms } from "../../pages/data/terms";
+import { indonesiaOnlineTerms } from "../../pages/data/terms";
 import { useState, useEffect } from "react";
 
 
@@ -40,8 +40,6 @@ function HomeIndo() {
   return (
     <>
       <Navigation />
-      {/* PAGE HEADER START */}
-      {/* PAGE HEADER END */}
       <section className="homeregist-section">
         <div>
           <div className="wrapper">
@@ -60,12 +58,6 @@ function HomeIndo() {
               onClick={() => handleOpenModal("/indoonline", indonesiaOnlineTerms)}
             >
               Kompetisi Online<i className="fa-solid fa-earth-americas"></i>
-            </a>
-            <a
-              className="btn btn-action text-center me-lg-5 "
-              onClick={() => handleOpenModal("/indooffline", indonesiaOfflineTerms)}
-            >
-              Kompetisi Offline<i className="fa-solid fa-earth-americas"></i>
             </a>
           </div>
         </div>
