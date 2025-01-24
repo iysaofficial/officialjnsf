@@ -35,6 +35,14 @@ function HomeIndo() {
     }
   };
   
+  useEffect(() => {
+    const hasAcceptedTerms = sessionStorage.getItem("termsAccepted");
+    if (hasAcceptedTerms === "true") {
+      setTermsAccepted(true); // Set status sudah diterima
+    }
+  }, []);
+  
+  
   
 
   return (

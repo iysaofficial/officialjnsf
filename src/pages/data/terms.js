@@ -1,5 +1,3 @@
-
-
 export const indonesiaOnlineTerms = (
   <>
     <h1 className="text-2xl mt-2">Peserta Online:</h1>
