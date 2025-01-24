@@ -27,16 +27,14 @@ function HomeIndo() {
 
   const handleAccept = () => {
     if (termsAccepted) {
-      // Simpan status persetujuan di localStorage
-      localStorage.setItem("termsAccepted", "true");
-  
+      sessionStorage.setItem("termsAccepted", "true"); // Menyimpan status setuju di sessionStorage
       setShowModal(false);
-      setTermsAccepted(false);
-      window.location.href = redirectLink; // Redirect ke halaman yang dituju
+      window.location.href = redirectLink;
     } else {
       alert("Harap setujui Syarat & Ketentuan untuk melanjutkan.");
     }
   };
+  
   
 
   return (
