@@ -2,6 +2,8 @@ import Navigation from '../../components/Navbar/NavBar';
 import Footer from '../../components/Footer';
 
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+
 
 function IndonesiaOffline() {
   const [selectedMaxNamaLengkap, setselectedMaxNamaLengkap] = useState("");
@@ -10,6 +12,8 @@ function IndonesiaOffline() {
   const maxProjectChars = 160; // batasan maksimal karakter
   const [statusMessage, setStatusMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const navigate = useNavigate(); // React Router hook untuk navigasi
+
 
   const handleInputNameChange = (e) => {
     const { value } = e.target;
@@ -25,47 +29,57 @@ function IndonesiaOffline() {
     }
   };
 
-  // useEffect(() => {
-  //   const scriptURL =
-  //     "https://script.google.com/macros/s/AKfycbwselKGmiYIh6Q0F4BXPLHYAWgAG-51jL_0EoZJwTuJXL7TFhf5bCmSYgT7qHv9GAlm4Q/exec";
+  useEffect(() => {
+    const termsAccepted = localStorage.getItem("termsAccepted");
 
-  //   const form = document.forms["regist-form"];
-  //   let buttonCounter = 0;
+    if (!termsAccepted) {
+      alert("Anda harus menyetujui Syarat & Ketentuan terlebih dahulu.");
+      navigate("/homeindo"); // Navigasi ke halaman HomeIndo
+    }
+  }, [navigate]);
 
-  //   if (form) {
-  //     const handleSubmit = async (e) => {
-  //       e.preventDefault();
-  //       if (buttonCounter === 0) {
-  //         buttonCounter++; // Cegah klik ganda
-  //         setIsLoading(true); // Tampilkan loader
-  //         try {
-  //           const response = await fetch(scriptURL, {
-  //             method: "POST",
-  //             body: new FormData(form),
-  //           });
-  //           if (response.ok) {
-  //             setStatusMessage("Data berhasil dikirim!");
-  //             form.reset(); // Reset form hanya jika pengiriman sukses
-  //             setTimeout(() => {
-  //               window.location.href = "/thankyou"; // Redirect setelah 1 detik
-  //             }, 1000);
-  //           } else {
-  //             setStatusMessage("Terjadi kesalahan saat mengirim data.");
-  //           }
-  //         } catch (error) {
-  //           setStatusMessage("Terjadi kesalahan saat mengirim data.");
-  //         } finally {
-  //           setIsLoading(false); // Sembunyikan loader
-  //           buttonCounter = 0; // Reset counter untuk klik selanjutnya
-  //         }
-  //       }
-  //     };
-  //     form.addEventListener("submit", handleSubmit);
-  //     return () => {
-  //       form.removeEventListener("submit", handleSubmit);
-  //     };
-  //   }
-  // }, []);
+
+  useEffect(() => {
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbwselKGmiYIh6Q0F4BXPLHYAWgAG-51jL_0EoZJwTuJXL7TFhf5bCmSYgT7qHv9GAlm4Q/exec";
+
+    const form = document.forms["regist-form"];
+    let buttonCounter = 0;
+
+    if (form) {
+      const handleSubmit = async (e) => {
+        e.preventDefault();
+        if (buttonCounter === 0) {
+          buttonCounter++; // Cegah klik ganda
+          setIsLoading(true); // Tampilkan loader
+          try {
+            const response = await fetch(scriptURL, {
+              method: "POST",
+              body: new FormData(form),
+            });
+            if (response.ok) {
+              setStatusMessage("Data berhasil dikirim!");
+              form.reset(); // Reset form hanya jika pengiriman sukses
+              setTimeout(() => {
+                window.location.href = "/thankyou"; // Redirect setelah 1 detik
+              }, 1000);
+            } else {
+              setStatusMessage("Terjadi kesalahan saat mengirim data.");
+            }
+          } catch (error) {
+            setStatusMessage("Terjadi kesalahan saat mengirim data.");
+          } finally {
+            setIsLoading(false); // Sembunyikan loader
+            buttonCounter = 0; // Reset counter untuk klik selanjutnya
+          }
+        }
+      };
+      form.addEventListener("submit", handleSubmit);
+      return () => {
+        form.removeEventListener("submit", handleSubmit);
+      };
+    }
+  }, []);
 
   return (
     <>

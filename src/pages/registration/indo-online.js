@@ -2,6 +2,8 @@ import Navigation from "../../components/Navbar/NavBar";
 import Footer from "../../components/Footer";
 
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+
 
 function IndonesiaOnline() {
   const [selectedMaxNamaLengkap, setselectedMaxNamaLengkap] = useState("");
@@ -12,6 +14,8 @@ function IndonesiaOnline() {
   const [categoryPrice, setCategoryPrice] = useState("");
   const [statusMessage, setStatusMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const navigate = useNavigate(); // React Router hook untuk navigasi
+
 
   const handleInputNameChange = (e) => {
     const { value } = e.target;
@@ -34,19 +38,19 @@ function IndonesiaOnline() {
     // Logika untuk menentukan harga berdasarkan kategori yang dipilih
     switch (value) {
       case "Social Science":
-        setCategoryPrice("Rp 950.000");
+        setCategoryPrice("Rp 900.000");
         break;
       case "Life Sciences":
-        setCategoryPrice("Rp 950.000");
+        setCategoryPrice("Rp 900.000");
         break;
       case "Environmental Science":
-        setCategoryPrice("Rp 950.000");
+        setCategoryPrice("Rp 900.000");
         break;
       case "Innovation Science":
-        setCategoryPrice("Rp 950.000");
+        setCategoryPrice("Rp 900.000");
         break;
       case "Engineering":
-        setCategoryPrice("Rp 950.000");
+        setCategoryPrice("Rp 900.000");
         break;
       default:
         setCategoryPrice("");
@@ -54,47 +58,56 @@ function IndonesiaOnline() {
     }
   };
 
-  // useEffect(() => {
-  //   const scriptURL =
-  //     "https://script.google.com/macros/s/AKfycbzHPj85Qdf3PjeF-m_yE_su37FEi3lhVRvusHjQ4bkHF1THm0qYy7gXg7BMtuI3yN2QbQ/exec";
+  useEffect(() => {
+    const termsAccepted = localStorage.getItem("termsAccepted");
 
-  //   const form = document.forms["regist-form"];
-  //   let buttonCounter = 0;
+    if (!termsAccepted) {
+      alert("Anda harus menyetujui Syarat & Ketentuan terlebih dahulu.");
+      navigate("/homeindo"); // Navigasi ke halaman HomeIndo
+    }
+  }, [navigate]);
 
-  //   if (form) {
-  //     const handleSubmit = async (e) => {
-  //       e.preventDefault();
-  //       if (buttonCounter === 0) {
-  //         buttonCounter++; // Cegah klik ganda
-  //         setIsLoading(true); // Tampilkan loader
-  //         try {
-  //           const response = await fetch(scriptURL, {
-  //             method: "POST",
-  //             body: new FormData(form),
-  //           });
-  //           if (response.ok) {
-  //             setStatusMessage("Data berhasil dikirim!");
-  //             form.reset(); // Reset form hanya jika pengiriman sukses
-  //             setTimeout(() => {
-  //               window.location.href = "/thankyou"; // Redirect setelah 1 detik
-  //             }, 1000);
-  //           } else {
-  //             setStatusMessage("Terjadi kesalahan saat mengirim data.");
-  //           }
-  //         } catch (error) {
-  //           setStatusMessage("Terjadi kesalahan saat mengirim data.");
-  //         } finally {
-  //           setIsLoading(false); // Sembunyikan loader
-  //           buttonCounter = 0; // Reset counter untuk klik selanjutnya
-  //         }
-  //       }
-  //     };
-  //     form.addEventListener("submit", handleSubmit);
-  //     return () => {
-  //       form.removeEventListener("submit", handleSubmit);
-  //     };
-  //   }
-  // }, []);
+  useEffect(() => {
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbzHPj85Qdf3PjeF-m_yE_su37FEi3lhVRvusHjQ4bkHF1THm0qYy7gXg7BMtuI3yN2QbQ/exec";
+
+    const form = document.forms["regist-form"];
+    let buttonCounter = 0;
+
+    if (form) {
+      const handleSubmit = async (e) => {
+        e.preventDefault();
+        if (buttonCounter === 0) {
+          buttonCounter++; // Cegah klik ganda
+          setIsLoading(true); // Tampilkan loader
+          try {
+            const response = await fetch(scriptURL, {
+              method: "POST",
+              body: new FormData(form),
+            });
+            if (response.ok) {
+              setStatusMessage("Data berhasil dikirim!");
+              form.reset(); // Reset form hanya jika pengiriman sukses
+              setTimeout(() => {
+                window.location.href = "/thankyou"; // Redirect setelah 1 detik
+              }, 1000);
+            } else {
+              setStatusMessage("Terjadi kesalahan saat mengirim data.");
+            }
+          } catch (error) {
+            setStatusMessage("Terjadi kesalahan saat mengirim data.");
+          } finally {
+            setIsLoading(false); // Sembunyikan loader
+            buttonCounter = 0; // Reset counter untuk klik selanjutnya
+          }
+        }
+      };
+      form.addEventListener("submit", handleSubmit);
+      return () => {
+        form.removeEventListener("submit", handleSubmit);
+      };
+    }
+  }, []);
 
   return (
     <>

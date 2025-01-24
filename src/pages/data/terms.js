@@ -1,6 +1,6 @@
 
 
-export const indonesiaTerms = (
+export const indonesiaOnlineTerms = (
   <>
     <h1 className="text-2xl mt-2">Peserta Online:</h1>
       <li>
@@ -17,7 +17,11 @@ export const indonesiaTerms = (
         Keputusan panitia terkait hal ini bersifat final dan tidak dapat
         diganggu gugat.
       </li>
-      <br></br>
+  </>
+);
+
+export const indonesiaOfflineTerms = (
+  <>
     <h1 className="text-2xl">Peserta Offline:</h1>
       <li>
         Peserta yang tidak mengumpulkan berkas persyaratan (extended abstract,

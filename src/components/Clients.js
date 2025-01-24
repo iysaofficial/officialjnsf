@@ -8,6 +8,11 @@ const clientImage = {
     width: 'auto',
     mixBlendMode: 'colorBurn'
 }
+const clientImage2 = {
+    height: '20rem',
+    width: 'auto',
+    mixBlendMode: 'colorBurn'
+}
 
 const Clients = () => {
     return (
@@ -22,23 +27,13 @@ const Clients = () => {
                     </div>
 
                 <div className="p-16" data-aos="fade-in" data-aos-delay="600">
-                    <div className="grid sm:grid-cols-2 lg:grid-cols-2">
-                        {/* <div style={clientImage} className= "overflow-hidden flex justify-center transition-all ease-in-out opacity-50 hover:opacity-100 w-1/6">
-                            <img src='./assets/logo/i3l.WebP' alt="client" />                           
-                        </div> */}
-
+                    <div className="grid sm:grid-cols-2 lg:grid-cols-2 place-items-center">
                         <div style={clientImage} className="overflow-hidden p-3 flex justify-center transition-all ease-in-out opacity-50 hover:opacity-100">
                             <img src="./assets/logo/navigation-logo.WebP" alt="client" />                            
                         </div> 
-                        <div style={clientImage} className="overflow-hidden p-3 flex justify-center transition-all ease-in-out opacity-50 hover:opacity-100">
-                            <img src="./assets/logo/navigation-logo.WebP" alt="client" />                            
-                        </div> 
-
-                        {/* <div style={clientImage} className="overflow-hidden p-3 flex justify-center transition-all ease-in-out opacity-50 hover:opacity-100">
-                            <img src={geps} alt="client" />                            
-                        </div> */}
-
-                                           
+                        <div style={clientImage2} className="overflow-hidden p-3 flex justify-center transition-all ease-in-out opacity-50 hover:opacity-100">
+                            <img src="./assets/logo/LOGOKEMENAG.png" alt="client" />                            
+                        </div>                                            
                     </div>
                 </div>
             </section>

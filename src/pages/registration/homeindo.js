@@ -1,6 +1,6 @@
 import Navigation from "../../components/Navbar/NavBar";
 import Footer from "../../components/Footer";
-import { indonesiaTerms } from "../../pages/data/terms";
+import { indonesiaOnlineTerms, indonesiaOfflineTerms } from "../../pages/data/terms";
 import { useState } from "react";
 
 function HomeIndo() {
@@ -15,15 +15,29 @@ function HomeIndo() {
     setShowModal(true); // Tampilkan modal
   };
 
+  // const handleAccept = () => {
+  //   if (termsAccepted) {
+  //     setShowModal(false);
+  //     setTermsAccepted(false); // Reset checkbox untuk penggunaan berikutnya
+  //     window.location.href = redirectLink; // Redirect ke halaman
+  //   } else {
+  //     alert("Harap setujui Syarat & Ketentuan untuk melanjutkan.");
+  //   }
+  // };
+
   const handleAccept = () => {
     if (termsAccepted) {
+      // Simpan status persetujuan di localStorage
+      localStorage.setItem("termsAccepted", "true");
+  
       setShowModal(false);
-      setTermsAccepted(false); // Reset checkbox untuk penggunaan berikutnya
-      window.location.href = redirectLink; // Redirect ke halaman
+      setTermsAccepted(false);
+      window.location.href = redirectLink; // Redirect ke halaman yang dituju
     } else {
       alert("Harap setujui Syarat & Ketentuan untuk melanjutkan.");
     }
   };
+  
 
   return (
     <>
@@ -45,13 +59,13 @@ function HomeIndo() {
           <div className="link-web mx-auto text-center">
             <a
               className="btn btn-action text-center me-lg-5 "
-              onClick={() => handleOpenModal("/indoonline", indonesiaTerms)}
+              onClick={() => handleOpenModal("/indoonline", indonesiaOnlineTerms)}
             >
               Kompetisi Online<i className="fa-solid fa-earth-americas"></i>
             </a>
             <a
               className="btn btn-action text-center me-lg-5 "
-              onClick={() => handleOpenModal("/indooffline", indonesiaTerms)}
+              onClick={() => handleOpenModal("/indooffline", indonesiaOfflineTerms)}
             >
               Kompetisi Offline<i className="fa-solid fa-earth-americas"></i>
             </a>
