@@ -33,7 +33,6 @@ import MediaCoverage from './pages/MediaCoverage';
 
 import HomeRegist from './pages/registration/homeregist';
 import HomeIndo from './pages/registration/homeindo';
-import IndonesiaOffline from './pages/registration/indo-offline';
 import IndonesiaOnline from './pages/registration/indo-online';
 import Thankyou from './pages/thankyoupage';
 
@@ -81,7 +80,6 @@ function App() {
             <Route path="/News2024" element={<Berita2024/>} />
             <Route path="/homeregist" element={<HomeRegist/>} />
             <Route path="/homeindo" element={<HomeIndo/>} />
-            <Route path="/indooffline" element={<IndonesiaOffline/>} />
             <Route path="/indoonline" element={<IndonesiaOnline/>} />
             <Route path="/thankyou" element={<Thankyou/>} />
           </Routes>

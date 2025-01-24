@@ -53,6 +53,9 @@ function IndonesiaOnline() {
       case "Engineering":
         setCategoryPrice("Rp 900.000");
         break;
+      case "Science in Islam":
+        setCategoryPrice("Rp 900.000");
+        break;
       default:
         setCategoryPrice("");
         break;
@@ -482,6 +485,7 @@ function IndonesiaOnline() {
                       Innovation Science
                     </option>
                     <option value="Engineering">Engineering</option>
+                    <option value="Science in Islam">Science in Islam</option>
                   </select>
                 </div>
 

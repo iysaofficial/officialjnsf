@@ -13,6 +13,11 @@ const clientImage2 = {
     width: 'auto',
     mixBlendMode: 'colorBurn'
 }
+const clientImage3 = {
+    height: '15rem',
+    width: 'auto',
+    mixBlendMode: 'colorBurn'
+}
 
 const Clients = () => {
     return (
@@ -23,9 +28,7 @@ const Clients = () => {
                         <div className='flex justify-center'>
                             <div className='w-24 border-b-4 border-[#101084]'></div>
                         </div>
-                        {/* <h2 className="mt-4 mx-12 text-center text-xl lg:text-2xl font-semibold text-blue-900">Some of our clients.</h2> */}
                     </div>
-
                 <div className="p-16" data-aos="fade-in" data-aos-delay="600">
                     <div className="grid sm:grid-cols-2 lg:grid-cols-2 place-items-center">
                         <div style={clientImage} className="overflow-hidden p-3 flex justify-center transition-all ease-in-out opacity-50 hover:opacity-100">
@@ -34,6 +37,19 @@ const Clients = () => {
                         <div style={clientImage2} className="overflow-hidden p-3 flex justify-center transition-all ease-in-out opacity-50 hover:opacity-100">
                             <img src="./assets/logo/LOGOKEMENAG.png" alt="client" />                            
                         </div>                                            
+                    </div>
+                </div>
+                <div className="my-4 py-4">
+                        <h2 className="my-2 text-center text-3xl text-[#101084] uppercase font-bold">Didukung Oleh</h2>
+                        <div className='flex justify-center'>
+                            <div className='w-24 border-b-4 border-[#101084]'></div>
+                        </div>
+                    </div>
+                <div className="p-16" data-aos="fade-in" data-aos-delay="600">
+                    <div className="grid place-items-center">
+                        <div style={clientImage3} className="overflow-hidden p-3 flex justify-center transition-all ease-in-out opacity-50 hover:opacity-100">
+                            <img src="./assets/logo/UniversitasPTIQJakarta.png" alt="client" />                            
+                        </div>                                          
                     </div>
                 </div>
             </section>
