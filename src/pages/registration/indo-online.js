@@ -15,6 +15,7 @@ function IndonesiaOnline() {
   const [statusMessage, setStatusMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate(); // React Router hook untuk navigasi
+  
 
 
   const handleInputNameChange = (e) => {
@@ -59,7 +60,7 @@ function IndonesiaOnline() {
   };
 
   useEffect(() => {
-    const termsAccepted = localStorage.getItem("termsAccepted");
+    const termsAccepted = sessionStorage.getItem("termsAccepted");
 
     if (!termsAccepted) {
       alert("Anda harus menyetujui Syarat & Ketentuan terlebih dahulu.");

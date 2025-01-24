@@ -1,7 +1,8 @@
 import Navigation from "../../components/Navbar/NavBar";
 import Footer from "../../components/Footer";
 import { indonesiaOnlineTerms, indonesiaOfflineTerms } from "../../pages/data/terms";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
 
 function HomeIndo() {
   const [showModal, setShowModal] = useState(false);
@@ -15,15 +16,6 @@ function HomeIndo() {
     setShowModal(true); // Tampilkan modal
   };
 
-  // const handleAccept = () => {
-  //   if (termsAccepted) {
-  //     setShowModal(false);
-  //     setTermsAccepted(false); // Reset checkbox untuk penggunaan berikutnya
-  //     window.location.href = redirectLink; // Redirect ke halaman
-  //   } else {
-  //     alert("Harap setujui Syarat & Ketentuan untuk melanjutkan.");
-  //   }
-  // };
 
   const handleAccept = () => {
     if (termsAccepted) {
