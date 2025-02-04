@@ -353,7 +353,7 @@ function IndonesiaOnline() {
                       Sekolah Menengah Atas
                     </option>
                     <option value="Universitas">Universitas</option>
-                    <option value="Guru dan PTK">Guru dan PTK</option>
+                    <option value="Guru dan Pengajar">Guru dan Pengajar</option>
                   </select>
                 </div>
                 <div className="input-box">
@@ -487,6 +487,7 @@ function IndonesiaOnline() {
                     </option>
                     <option value="Engineering">Engineering</option>
                     <option value="Science in Islam">Science in Islam</option>
+                    <option value="Education/PTK">Education/PTK</option>
                   </select>
                 </div>
 
