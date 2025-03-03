@@ -130,7 +130,7 @@ body {
 .registration-section form .user-details .input-box {
   margin-bottom: 30px;
   width: calc(100% / 2 - 20px);
-  color: var(--warna-primary);
+  color: var(--warna-tulisan2);
   font-size: clamp(14px, 2vw, 24px);
 }
 .registration-section form .input-box span.details {
@@ -286,7 +286,7 @@ body {
   .registration-section form .user-details .input-box {
     margin-bottom: 15px;
     width: 200%;
-    color: var(--warna-tulisan);
+    color: var(--warna-tulisan2);
   }
   .registration-section form .category {
     width: 200%;
