@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
+import React from "react";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
   return (
@@ -25,9 +25,7 @@ const Footer = () => {
 
             {/* 2nd block */}
             <div className="col-span-6 md:col-span-6 lg:col-span-1 ml-7 mx-auto">
-              <h6 className="text-[#101084] text-xl font-bold mb-4">
-                LINK
-              </h6>
+              <h6 className="text-[#101084] text-xl font-bold mb-4">LINK</h6>
               <ul className="text-md">
                 <li className="mb-2">
                   <HashLink
@@ -156,7 +154,7 @@ const Footer = () => {
             <div className="w-full md:w-4/12 px-4 mx-auto text-center py-2">
               <div className="text-sm text-gray-200 font-semibold py-1">
                 Copyright &copy; {new Date().getFullYear()}
-                {'  '}
+                {"  "}
                 <HashLink to="#" className=" hover:text-gray-900">
                   IYSA IT DIVISION
                 </HashLink>

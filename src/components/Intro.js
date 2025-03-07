@@ -26,10 +26,10 @@ const Intro = () => {
             <div>
               <p className="my-3 text-xl text-gray-600 font-semibold">
                 Indonesian Young Scientist Association (IYSA) bekerja sama
-                dengan Indonesia National Institute for Life Sciences (i3L)
+                dengan Kantor Kementrian Agama Provinsi DKI Jakarta
                 mengadakan kompetisi ilmiah bernama “Jakarta National Science
                 Fair” untuk pertama kalinya JNSF diselenggarakan dalam kompetisi
-                situasi hybrid (Online dan Offline).
+                Online.
               </p>
             </div>
 
