@@ -26,7 +26,7 @@ function HomeRegist() {
           </div>
           <div className="link-web mx-auto text-center">
             <a href="/homeindo" className="btn btn-action text-center me-lg-5">
-              Indonesia Participant{" "}
+              Tutup Pendaftaran{" "}
               <i className="fa-solid fa-earth-americas"></i>
             </a>
           </div>
