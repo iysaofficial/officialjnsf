@@ -55,7 +55,7 @@ function HomeIndo() {
           <div className="link-web mx-auto text-center">
             <a
               className="btn btn-action text-center me-lg-5 "
-              onClick={() => handleOpenModal("/indoonline", indonesiaOnlineTerms)}
+              onClick={() => handleOpenModal("/", indonesiaOnlineTerms)}
             >
               Tutup Pendaftaran<i className="fa-solid fa-earth-americas"></i>
             </a>
