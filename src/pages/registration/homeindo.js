@@ -57,7 +57,7 @@ function HomeIndo() {
               className="btn btn-action text-center me-lg-5 "
               onClick={() => handleOpenModal("/indoonline", indonesiaOnlineTerms)}
             >
-              Kompetisi Online<i className="fa-solid fa-earth-americas"></i>
+              Tutup Pendaftaran<i className="fa-solid fa-earth-americas"></i>
             </a>
           </div>
         </div>
