@@ -28,6 +28,7 @@ import Offline2024 from './pages/listwinner/Offline2024';
 import Online2024 from './pages/listwinner/Online2024';
 
 import Berita2024 from './pages/berita/berita2024/Berita2024';
+import Berita2025 from './pages/berita/berita2025/Berita2025';
 import News2024 from './pages/berita/News2024';
 import MediaCoverage from './pages/MediaCoverage';
 
@@ -76,8 +77,9 @@ function App() {
 
             <Route path="/CertificateSupervisor" element={<Certificatesupervisor/>} />
             <Route path="/Mediacoverage" element={<MediaCoverage/>} />
-            <Route path="/2024" element={<News2024/>} />
+            <Route path="/Berita" element={<News2024/>} />
             <Route path="/News2024" element={<Berita2024/>} />
+            <Route path="/News2025" element={<Berita2025/>} />
             <Route path="/homeregist" element={<HomeRegist/>} />
             <Route path="/homeindo" element={<HomeIndo/>} />
             <Route path="/indoonline" element={<IndonesiaOnline/>} />

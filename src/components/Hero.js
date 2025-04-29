@@ -53,7 +53,7 @@ const Hero = () => {
                 href='/'
                   className="text-white bg-[#101084] hover:bg-blue-900 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0"
                 >
-                  Tutup Pendaftaran 2025
+                  Segera Hadir 2026
                   <svg
                     className="w-4 h-4 ml-1"
                     xmlns="http://www.w3.org/2000/sv"

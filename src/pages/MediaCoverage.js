@@ -42,7 +42,7 @@ const MediaCoverage = () => {
                   <a className="font-bold">
                     {/* Lokasi Venue: {" "}   */}
                     <a
-                      href="/2024"
+                      href="/Berita"
                     >
                       Klik Disini
                     </a>
