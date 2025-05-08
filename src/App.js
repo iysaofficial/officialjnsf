@@ -38,6 +38,11 @@ import IndonesiaOnline from './pages/registration/indo-online';
 import Thankyou from './pages/thankyoupage';
 
 
+import Spesial2025 from './pages/listwinner2025/Spesial2025';
+import Online2025 from './pages/listwinner2025/Online2025';
+import Offline2025 from './pages/listwinner2025/Offline2025';
+
+
 function App() {
   useEffect(() => {
     const aos_init = () => {
@@ -84,6 +89,11 @@ function App() {
             <Route path="/homeindo" element={<HomeIndo/>} />
             <Route path="/indoonline" element={<IndonesiaOnline/>} />
             <Route path="/thankyou" element={<Thankyou/>} />
+
+
+            <Route path="/Winner2025" element={<Spesial2025 />} />
+            <Route path="/Offline2025" element={<Offline2025 />} />
+            <Route path="/Online2025" element={<Online2025 />} />
           </Routes>
         </ScrollToTop>
       </Router>

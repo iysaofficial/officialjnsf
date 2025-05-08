@@ -1,12 +1,12 @@
 import React from "react";
-import NavBar from "../components/Navbar/NavBar";
-import Footer from "../components/Footer";
-import img from "../images/web.svg";
-import img2 from "../images/app.svg";
-import img3 from "../images/hosting.svg";
-import img4 from "../images/consultation.svg";
+import NavBar from "../../components/Navbar/NavBar";
+import Footer from "../../components/Footer";
+import img from "../../images/web.svg";
+import img2 from "../../images/app.svg";
+import img3 from "../../images/hosting.svg";
+import img4 from "../../images/consultation.svg";
 
-const LoW = () => {
+const Online2025 = () => {
   return (
     <>
       <div>
@@ -29,75 +29,113 @@ const LoW = () => {
 
           <div className="px-12" data-aos="fade-down" data-aos-delay="600">
             <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-5">
-              <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
+            <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
                 <div className="m-2 text-justify text-sm">
-                  <img
+                  {/* <img
                     alt="card img"
                     className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out"
                     src="./assets/logo/new.jpg"
-                  />
+                  /> */}
                   <h2 className="font-semibold my-4 text-2xl text-center">
-                    Daftar Pemenang 2024
+                    Guru
                   </h2>
                   <a className="font-bold">
                     {/* Lokasi Venue: {" "}   */}
-                    <a href="/Winner2024">Klik Disini</a>
+                    <a
+                      href="https://drive.google.com/file/d/1cuo2FSJm95VzkBRc6UYa8B087vIF7TqI/view?usp=drive_link"
+                      target="_blank"
+                    >
+                      Klik Disini
+                    </a>
                   </a>
                 </div>
               </div>
               <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
                 <div className="m-2 text-justify text-sm">
-                  <img
+                  {/* <img
                     alt="card img"
                     className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out"
                     src="./assets/logo/new.jpg"
-                  />
+                  /> */}
                   <h2 className="font-semibold my-4 text-2xl text-center">
-                    Daftar Pemenang 2025
+                    Universitas
                   </h2>
                   <a className="font-bold">
                     {/* Lokasi Venue: {" "}   */}
-                    <a href="/Winner2025">Klik Disini</a>
+                    <a
+                      href="https://drive.google.com/file/d/14WUNuY6PNnx3fhvTBtua3IqDQSeFeS44/view?usp=sharing"
+                      target="_blank"
+                    >
+                      Klik Disini
+                    </a>
                   </a>
                 </div>
               </div>
 
-
-              {/* <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
+              <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
                 <div className="m-2 text-justify text-sm">
-                  <img
+                  {/* <img
                     alt="card img"
                     className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out"
                     src="./assets/logo/life.png"
-                  />
+                  /> */}
                   <h2 className="font-semibold my-4 text-2xl text-center">
-                    Life Sciences
+                    SMA
                   </h2>
-                  <p className="text-md font-medium">
-                    ilmu yang menuntut studi sistematis dan holistik organisme
-                    hidup, dengan fokus tujuan melahirkan beragam terobosan
-                    ilmiah.
-                  </p>
+                  <a className="font-bold">
+                    {/* Lokasi Venue: {" "}   */}
+                    <a
+                      href="https://drive.google.com/file/d/1-GgOzuNJFEHjpunxgBuo8KxAYW7UzcOw/view?usp=sharing"
+                      target="_blank"
+                    >
+                      Klik Disini
+                    </a>
+                  </a>
                 </div>
-              </div> */}
+              </div>
 
-              {/* <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
+              <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
                 <div className="m-2 text-justify text-sm">
-                  <img
+                  {/* <img
                     alt="card img"
                     className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out"
                     src="./assets/logo/env.png"
-                  />
+                  /> */}
                   <h2 className="font-semibold my-4 text-2xl text-center ">
-                    Environmental Science
+                    SMP 
                   </h2>
-                  <p className="text-md font-medium">
-                    Selain berbagai aspek ilmu alam dan sosial, pelajar juga
-                    didorong untuk mengeksplorasi pendekatan psikologis,
-                    pembuatan kebijakan, dan studi ilmiah
-                  </p>
+                  <a className="font-bold">
+                    {/* Lokasi Venue: {" "}   */}
+                    <a
+                      href="https://drive.google.com/file/d/18CsGAlcmUJItBui8OEfgbnQcf9bImvm-/view?usp=sharing"
+                      target="_blank"
+                    >
+                      Klik Disini
+                    </a>
+                  </a>
                 </div>
-              </div> */}
+              </div>
+              <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
+                <div className="m-2 text-justify text-sm">
+                  {/* <img
+                    alt="card img"
+                    className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out"
+                    src="./assets/logo/env.png"
+                  /> */}
+                  <h2 className="font-semibold my-4 text-2xl text-center ">
+                    SD
+                  </h2>
+                  <a className="font-bold">
+                    {/* Lokasi Venue: {" "}   */}
+                    <a
+                      href="https://drive.google.com/file/d/1whBncIz6g8qARLszRjXV3vrkplqAkBDo/view?usp=sharing"
+                      target="_blank"
+                    >
+                      Klik Disini
+                    </a>
+                  </a>
+                </div>
+              </div>
 
               {/* <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
                 <div className="m-2 text-justify text-sm">
@@ -170,4 +208,4 @@ const LoW = () => {
   );
 };
 
-export default LoW;
+export default Online2025;
