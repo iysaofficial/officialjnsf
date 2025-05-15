@@ -42,6 +42,9 @@ import Spesial2025 from './pages/listwinner2025/Spesial2025';
 import Online2025 from './pages/listwinner2025/Online2025';
 import Offline2025 from './pages/listwinner2025/Offline2025';
 
+import Report from './pages/reportjnsf/Report';
+import Report2025 from './pages/reportjnsf/Report2025';
+
 
 function App() {
   useEffect(() => {
@@ -94,6 +97,9 @@ function App() {
             <Route path="/Winner2025" element={<Spesial2025 />} />
             <Route path="/Offline2025" element={<Offline2025 />} />
             <Route path="/Online2025" element={<Online2025 />} />
+
+            <Route path="/Report" element={<Report />} />
+            <Route path="/Report2025" element={<Report2025 />} />
           </Routes>
         </ScrollToTop>
       </Router>
