@@ -47,6 +47,8 @@ import Report2025 from "./pages/reportjnsf/Report2025";
 import Aftereventpage from "./pages/Afterevent/Aftereventpage";
 import Pressrelease2025 from "./pages/Afterevent/Pressrelease2025";
 
+import Kurasipage from "./pages/Kurasi/Kurasipage";
+
 function App() {
   useEffect(() => {
     const aos_init = () => {
@@ -106,6 +108,8 @@ function App() {
 
             <Route path="/Aftereventpage" element={<Aftereventpage />} />
             <Route path="/Pressrelease2025" element={<Pressrelease2025 />} />
+
+            <Route path="/Kurasipage" element={<Kurasipage />} />
           </Routes>
         </ScrollToTop>
       </Router>
