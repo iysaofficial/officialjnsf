@@ -38,9 +38,7 @@ const Services = () => {
                   Social Science
                 </h2>
                 <p className="text-md font-medium">
-                  salah satu cabang ilmu pengetahuan yang dikhususkan
-                  untuk mempelajari masyarakat dan hubungan antar
-                  individu dalam masyarakat tersebut.
+                  Kategori ini mencakup berbagai disiplin ilmu, termasuk sosiologi, psikologi,antropologi, dan ekonomi. Ini berfokus pada studi tentang masyarakat manusia dan hubungan sosial.
                 </p>
               </div>
             </div>
@@ -56,9 +54,23 @@ const Services = () => {
                   Life Sciences
                 </h2>
                 <p className="text-md font-medium">
-                  ilmu yang menuntut studi sistematis dan holistik
-                  organisme hidup, dengan fokus tujuan melahirkan
-                  beragam terobosan ilmiah.
+                  Ilmu Hayati adalah disiplin dasar yang mempelajari berbagai aspek kehidupan dan organisme hidup, termasuk struktur, fungsi, pertumbuhan, evolusi, dan ekologi. Fokusnya terletak pada pemahaman fenomena biologis tanpa secara langsung bertujuan untuk penerapan praktis.
+                </p>
+              </div>
+            </div>
+
+             <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
+              <div className="m-2 text-justify text-sm">
+                <img
+                  alt="card img"
+                  className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out"
+                  src="./assets/logo/en.png"
+                />
+                <h2 className="font-semibold my-4 text-2xl text-center ">
+                Engineering
+                </h2>
+                <p className="text-md font-medium">
+                  Sumber energi ini dapat berasal dari alam, seperti energi matahari, angin, dan air, maupun dari bahan bakar fosil dan reaksi nuklir. Energi memainkan peran penting dalam kehidupan sehari-hari, industri, dan keberlanjutan lingkungan, serta dapat diubah dari satu bentuk ke bentuk lain untuk memenuhi kebutuhan manusia, seperti pembangkitan listrik, transportasi, dan pemanasan.
                 </p>
               </div>
             </div>
@@ -74,9 +86,7 @@ const Services = () => {
                   Environmental Science
                 </h2>
                 <p className="text-md font-medium">
-                  Selain berbagai aspek ilmu alam dan sosial, pelajar
-                  juga didorong untuk mengeksplorasi pendekatan
-                  psikologis, pembuatan kebijakan, dan studi ilmiah
+                  Bidang akademik interdisipliner yang mempelajari interaksi antara komponen fisik, kimia, dan biologi dalam lingkungan, dengan fokus khusus pada dampak terhadap manusia.
                 </p>
               </div>
             </div>
@@ -92,53 +102,7 @@ const Services = () => {
                 Innovation Science
                 </h2>
                 <p className="text-md font-medium">
-                untuk memberi Anda wawasan tentang sifat perubahan teknologi dan kondisi yang mempengaruhi inovasi dan produksi pengetahuan.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
-              <div className="m-2 text-justify text-sm">
-                <img
-                  alt="card img"
-                  className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out"
-                  src="./assets/logo/en.png"
-                />
-                <h2 className="font-semibold my-4 text-2xl text-center ">
-                Engineering
-                </h2>
-                <p className="text-md font-medium">
-                profesi seorang profesional yang merancang dan membuat rencana pembangunan berbagai struktur dan sistem.
-                </p>
-              </div>
-            </div>
-            <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
-              <div className="m-2 text-justify text-sm">
-                <img
-                  alt="card img"
-                  className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out"
-                  src="./assets/logo/educasi.jpg"
-                />
-                <h2 className="font-semibold my-4 text-2xl text-center ">
-                Educasi/PTK
-                </h2>
-                <p className="text-md font-medium">
-                profesi seorang profesional yang mejunjung tinggir para edukasi
-                </p>
-              </div>
-            </div>
-            <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
-              <div className="m-2 text-justify text-sm">
-                <img
-                  alt="card img"
-                  className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out"
-                  src="./assets/logo/islam.png"
-                />
-                <h2 className="font-semibold my-4 text-2xl text-center ">
-                Science in Islam
-                </h2>
-                <p className="text-md font-medium">
-                profesi seorang profesional yang memahami tentang science Islam.
+                Eksplorasi proses, faktor, dan hasil inovasi, termasuk pengembangan ide, teknologi, dan model bisnis baru.
                 </p>
               </div>
             </div>

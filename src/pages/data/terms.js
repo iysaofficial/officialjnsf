@@ -1,117 +1,87 @@
 export const indonesiaOnlineTerms = (
   <>
-    <h1 className="text-2xl mt-2">Peserta Online:</h1>
+    <h5>
+      Before proceeding, please read and agree to the following terms &
+      conditions for Online Participants:
+    </h5>
+    <ul>
       <li>
-        Peserta yang tidak mengumpulkan dokumen persyaratan (extended abstract,
-        PowerPoint) setelah dua kali pengingat akan dianggap mengundurkan diri
-        secara otomatis.
+        Participants who do not submit the required documents (extended
+        abstract, PowerPoint) after two reminders will be considered to have
+        withdrawn automatically.
       </li>
       <li>
-        Peserta wajib menggunakan judul dan extended abstract yang sesuai dengan
-        kategori yang diikuti. (Peserta internasional, wajib menggunakan bahasa
-        Inggris untuk seluruh persyaratan dokumen yang dibutuhkan)
+        Participants must use a title and extended abstract that match the
+        selected category. (International participants must use English for all
+        required documents.)
       </li>
       <li>
-        Keputusan panitia terkait hal ini bersifat final dan tidak dapat
-        diganggu gugat.
+        The committee’s decision on this matter is final and cannot be
+        contested.
       </li>
+    </ul>
+    <p className="text-align">
+      Additionally, we inform you that each event will be registered for
+      curation by SIM T Puspresnas.
+    </p>
+    <p className="text-align">
+      However, the curation results are fully under the authority of Puspresnas
+      and cannot be contested by any party. Therefore, we do not accept
+      objections or complaints regarding the results determined by Puspresnas.
+    </p>
   </>
 );
 
 export const indonesiaOfflineTerms = (
   <>
-    <h1 className="text-2xl">Peserta Offline:</h1>
+    <h5>
+      Before proceeding, please read and agree to the following terms &
+      conditions for Offline Participants:
+    </h5>
+    <ul>
       <li>
-        Peserta yang tidak mengumpulkan berkas persyaratan (extended abstract,
-        poster) setelah dua kali pengingat akan dianggap mengundurkan diri
-        secara otomatis.
+        Participants who do not submit the required documents (extended
+        abstract, poster) after two reminders will be considered to have
+        withdrawn automatically.
       </li>
       <li>
-        Peserta wajib menggunakan judul dan extended abstract yang sesuai dengan
-        kategori yang diikuti. (Peserta internasional, wajib menggunakan bahasa
-        Inggris untuk seluruh requirement)
+        Participants must use a title and extended abstract that match the
+        selected category. (International participants must use English for all
+        requirements.)
       </li>
       <li>
-        Peserta diwajibkan untuk membuat poster berukuran A0, membawa produk,
-        dan juga paper/extended abstract (dalam bentuk hard copy) pada saat sesi
-        penjurian.
+        Participants are required to create a poster in A0 size, bring their
+        product, and also provide a paper/extended abstract (in hard copy)
+        during the judging session.
       </li>
       <li>
-        Pemberian penghargaan kepada peserta akan dilakukan sesuai dengan urutan
-        yang telah ditetapkan dalam susunan acara (peserta tidak diperkenankan
-        untuk meminta award sebelum gilirannya).
+        Awards will be presented to participants according to the sequence set
+        in the event schedule (participants are not allowed to request their
+        award before their turn).
       </li>
       <li>
-        Peserta diwajibkan untuk mengikuti seluruh rangkaian kegiatan sesuai
-        dengan jadwal yang telah disusun oleh panitia penyelenggara.
+        Participants are required to attend the entire event series according to
+        the schedule prepared by the organizing committee.
       </li>
       <li>
-        Bagi peserta offline yang berhak atas hadiah Best booth, Best Poster,
-        Best Presentation, Best Project, uang tunai, semi grand award, dan grand
-        award namun tidak dapat hadir pada acara penyerahan hadiah, maka hadiah
-        yang bersangkutan dinyatakan hangus.
+        For offline participants eligible for awards such as Best Booth, Best
+        Poster, Best Presentation, Best Project, cash prizes, Semi Grand Award,
+        and Grand Award but are unable to attend the awarding ceremony, the
+        respective prize will be forfeited.
       </li>
       <li>
-        Keputusan panitia terkait hal ini bersifat final dan tidak dapat
-        diganggu gugat.
-      </li>
-  </>
-);
-
-export const internationalTerms = (
-  <>
-    <h3>Online Participants:</h3>
-    <ol>
-      <li>
-        Participants who do not submit the required documents (extended abstract,
-        PowerPoint) after two reminders will be considered to have resigned
-        automatically.
-      </li>
-      <li>
-        Participants must use the title and extended abstract in accordance with
-        the category they are participating in. (International participants must
-        use English for all required documents)
-      </li>
-      <li>
-        The committee&apos;s decision regarding this matter is final and cannot be
+        The committee’s decision on this matter is final and cannot be
         contested.
       </li>
-    </ol>
-    <h3>Offline Participants:</h3>
-    <ol>
-      <li>
-        Participants who do not submit the required files (extended abstract,
-        poster) after two reminders will be considered automatically resigned.
-      </li>
-      <li>
-        Participants must use titles and extended abstracts that are in accordance
-        with the category they are participating in. (International participants
-        must use English for all requirements)
-      </li>
-      <li>
-        Participants are required to make an A0-sized poster, bring the product
-        and also the paper/extended abstract (in hard copy) during the judging
-        session.
-      </li>
-      <li>
-        The awarding of awards to participants will be carried out in accordance
-        with the order set out in the schedule of events (participants are not
-        allowed to request awards before their turn).
-      </li>
-      <li>
-        Participants are required to follow the entire series of activities in
-        accordance with the schedule prepared by the organizing committee.
-      </li>
-      <li>
-        For offline participants who are entitled to the Best booth, Best Poster,
-        Best Presentation, Best Project, cash, semi grand award, and grand award
-        prizes but cannot attend the prize distribution ceremony, the prizes
-        concerned will be declared forfeited.
-      </li>
-      <li>
-        The committee&apos;s decision regarding this matter is final and cannot be
-        contested.
-      </li>
-    </ol>
+    </ul>
+    <p className="text-align">
+      Additionally, we inform you that each event will be registered for
+      curation by SIM T Puspresnas.
+    </p>
+    <p className="text-align">
+      However, the curation results are fully under the authority of Puspresnas
+      and cannot be contested by any party. Therefore, we do not accept
+      objections or complaints regarding the results determined by Puspresnas.
+    </p>
   </>
 );

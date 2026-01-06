@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./registration.css";
 
-function IndonesiaOnline() {
+function IndonesiaOffline() {
   const [selectedMaxNamaLengkap, setselectedMaxNamaLengkap] = useState("");
   const maxNameChars = 180; // batasan maksimal karakter
   const [selectedMaxProject, setselectedMaxProject] = useState("");
@@ -12,13 +12,12 @@ function IndonesiaOnline() {
   const maxSchoolChars = 500; // batasan maksimal karakter
   const maxProjectChars = 160; // batasan maksimal karakter
   const [selectedCategory, setSelectedCategory] = useState("");
-  const [categoryPrice, setCategoryPrice] = useState("");
   const [statusMessage, setStatusMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [countdown, setCountdown] = useState(5);
   const [canClick, setCanClick] = useState(false);
-  const navigate = useNavigate();
+  const navigate = useNavigate(); // Gunakan useNavigate
 
   const handleInputNameChange = (e) => {
     const { value } = e.target;
@@ -47,8 +46,7 @@ function IndonesiaOnline() {
 
     // Logika untuk menentukan harga berdasarkan kategori yang dipilih
     switch (value) {
-      case "Jakarta National Science Fair - Online Competition":
-        setCategoryPrice("RP 1.150.000");
+      case "Jakarta National Science Fair - Offline Competition":
         break;
       default:
         break;
@@ -57,6 +55,7 @@ function IndonesiaOnline() {
 
   useEffect(() => {
     const termsAccepted = sessionStorage.getItem("termsAccepted");
+
     if (!termsAccepted) {
       alert("Anda harus menyetujui Syarat & Ketentuan terlebih dahulu.");
       navigate("/homeindo"); // Navigasi ke halaman HomeIndo
@@ -64,7 +63,7 @@ function IndonesiaOnline() {
   }, [navigate]);
 
   const scriptURL =
-    "https://script.google.com/macros/s/AKfycbwAjq1vILtb_yjX10yP9CnMI52pZMR4R8DoPXhDjNELKzf9wpUEJxAuTOqsJgoI_To/exec";
+    "https://script.google.com/macros/s/AKfycbwI0yoBY7rBkJOvXFqnCVXMb72aT566lz2l-b2ha_LyJ0Q2M_30xlVXkzMjFblELYP_/exec";
 
   useEffect(() => {
     const form = document.forms["regist-form"];
@@ -94,7 +93,6 @@ function IndonesiaOnline() {
       };
     }
   }, []);
-
   const handleConfirmSubmit = async () => {
     setShowModal(false); // Tutup modal
     const form = document.forms["regist-form"];
@@ -116,7 +114,6 @@ function IndonesiaOnline() {
           namaLengkap: selectedMaxNamaLengkap,
           projectTitle: selectedMaxProject,
           category: selectedCategory,
-          categoryPrice: categoryPrice,
           namasekolah: selectedNamaSekolah,
         };
 
@@ -151,8 +148,8 @@ function IndonesiaOnline() {
             <h1 class="garis-bawah"></h1>
             <br />
             <br />
-            <h4>
-              HALLO PESERTA JNSF 2026, Mohon perhatikan informasi berikut ini
+            <h4 className="text-xl">
+              HALLO PESERTA JNSF 2025, Mohon perhatikan informasi berikut ini
               sebelum mengisi formulir pendaftaran :
             </h4>
             <br />
@@ -175,7 +172,6 @@ function IndonesiaOnline() {
               alamat email team leader.
             </p>
             <br />
-
             {showModal && (
               <div className="modal-overlay-submit">
                 <div className="modal-submit text-lg-center text-md-center">
@@ -221,7 +217,7 @@ function IndonesiaOnline() {
                     id="CATEGORY_PARTICIPANT"
                     name="CATEGORY_PARTICIPANT"
                     className="form-control"
-                    placeholder="Choose Categories Participant"
+                    placeholder="Pilih Kategori Peserta"
                     value="PESERTA INDONESIA"
                     readOnly
                   />
@@ -240,8 +236,8 @@ function IndonesiaOnline() {
                     required
                   >
                     <option value="">--Pilih Kategori Kompetisi--</option>
-                    <option value="Jakarta National Science Fair - Online Competition">
-                      Online Competition
+                    <option value="Jakarta National Science Fair - Offline Competition">
+                      Offline Competition
                     </option>
                   </select>
                 </div>
@@ -258,9 +254,9 @@ function IndonesiaOnline() {
                       diawal, dengan format seperti berikut :
                     </p>
                     <p>Note : maksimal 5 anggota + 1 ketua tim</p>
-                    <h6>Adrian Simatupang</h6>
-                    <h6>Pangeran Hasanudin</h6>
-                    <h6>Irsyad Zaidan Kusuma</h6>
+                    <h6>Kamal Putra Kian Santang</h6>
+                    <h6>Muhammad Nur Alif Zainudin</h6>
+                    <h6>Irsyad Kamil Zaidan</h6>
                   </label>
                   <textarea
                     type="text"
@@ -273,7 +269,7 @@ function IndonesiaOnline() {
                     onChange={handleInputNameChange}
                   ></textarea>
                   <p>
-                    {selectedMaxNamaLengkap.length} / {maxNameChars} character
+                    {selectedMaxNamaLengkap.length} / {maxNameChars} karakter
                   </p>
                 </div>
                 <div className="input-box">
@@ -315,7 +311,7 @@ function IndonesiaOnline() {
                     id="LEADER_EMAIL"
                     name="LEADER_EMAIL"
                     class="form-control"
-                    placeholder="Masukan Alamat Email ketua Tim"
+                    placeholder="Masukan Alamat Email Ketua Tim"
                     required
                   />
                 </div>
@@ -527,7 +523,7 @@ function IndonesiaOnline() {
                     onChange={handleInputProjectChange}
                   ></textarea>
                   <p>
-                    {selectedMaxProject.length} / {maxProjectChars} character
+                    {selectedMaxProject.length} / {maxProjectChars} karakter
                   </p>
                 </div>
 
@@ -566,7 +562,7 @@ function IndonesiaOnline() {
                     id="YES_NO"
                     name="YES_NO"
                     className="form-control"
-                    placeholder="--Choose Information Resources-- "
+                    placeholder="--Memilih Sumber Daya Informasi--"
                     required
                   >
                     <option>--Pilih--</option>
@@ -591,21 +587,6 @@ function IndonesiaOnline() {
                     placeholder="Masukan Nama Kompetisinya"
                   ></textarea>
                   <div className="mt-5" id="form_alerts"></div>
-                </div>
-                {/* Kolom Harga */}
-                <div className="input-box invisible">
-                  <label htmlFor="CATEGORY_PRICE" className="form-label ">
-                    Harga Pendaftaran
-                  </label>
-                  <input
-                    type="text"
-                    id="CATEGORY_PRICE"
-                    name="CATEGORY_PRICE"
-                    className="form-control"
-                    value={categoryPrice}
-                    readOnly
-                    placeholder="Harga akan muncul berdasarkan kategori yang dipilih"
-                  />
                 </div>
               </div>
               {/* DETAIL PROJECT END */}
@@ -641,14 +622,14 @@ function IndonesiaOnline() {
                 </div>
                 <div className="input-box">
                   <label for="INFORMATION_RESOURCES" className="form-label">
-                    Sumber Informasi Kompetisi JNSF 2026
+                    Sumber Informasi Kompetisi JNSF 2025
                   </label>
                   <select
                     type="text"
                     id="INFORMATION_RESOURCES"
                     name="INFORMATION_RESOURCES"
                     className="form-control"
-                    placeholder="--Choose Information Resources-- "
+                    placeholder="--Memilih Sumber Daya Informasi--"
                     required
                   >
                     <option value="">--Pilih Sumber Informasi--</option>
@@ -689,7 +670,6 @@ function IndonesiaOnline() {
                 <input type="submit" value="KIRIM" />
               </div>
             </form>
-
             {/* Loader dan Status Message */}
             {isLoading && (
               <div className="overlay-loader">
@@ -709,4 +689,4 @@ function IndonesiaOnline() {
   );
 }
 
-export default IndonesiaOnline;
+export default IndonesiaOffline;

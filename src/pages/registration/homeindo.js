@@ -1,7 +1,8 @@
 import Navigation from "../../components/Navbar/NavBar";
 import Footer from "../../components/Footer";
-import { indonesiaOnlineTerms } from "../../pages/data/terms";
+import { indonesiaOnlineTerms, indonesiaOfflineTerms } from "../../pages/data/terms";
 import { useState, useEffect } from "react";
+import "./registration.css";
 
 
 function HomeIndo() {
@@ -9,13 +10,11 @@ function HomeIndo() {
   const [termsAccepted, setTermsAccepted] = useState(false);
   const [redirectLink, setRedirectLink] = useState("");
   const [termsContent, setTermsContent] = useState("");
-
   const handleOpenModal = (link, terms) => {
     setRedirectLink(link); // Set link tujuan redirect
     setTermsContent(terms); // Set isi terms sesuai pilihan
     setShowModal(true); // Tampilkan modal
   };
-
 
   const handleAccept = () => {
     if (termsAccepted) {
@@ -26,20 +25,17 @@ function HomeIndo() {
       alert("Harap setujui Syarat & Ketentuan untuk melanjutkan.");
     }
   };
-  
+
   useEffect(() => {
     const hasAcceptedTerms = sessionStorage.getItem("termsAccepted");
     if (hasAcceptedTerms === "true") {
       setTermsAccepted(true); // Set status sudah diterima
     }
   }, []);
-  
-  
-  
 
   return (
     <>
-      <Navigation />
+    <Navigation />
       <section className="homeregist-section">
         <div>
           <div className="wrapper">
@@ -52,12 +48,28 @@ function HomeIndo() {
               </h3>
             </div>
           </div>
-          <div className="link-web mx-auto text-center">
+          <div className="link-web mx-auto text-center m-5">
             <a
-              className="btn btn-action text-center me-lg-5 "
-              onClick={() => handleOpenModal("/", indonesiaOnlineTerms)}
+              className="btn btn-custom text-center m-5"
+              onClick={() =>
+                handleOpenModal(
+                  "/indo-online",
+                  indonesiaOnlineTerms
+                )
+              }
             >
-              Tutup Pendaftaran<i className="fa-solid fa-earth-americas"></i>
+              Kompetisi Online<i className="fa-solid fa-earth-americas"></i>
+            </a>
+            <a
+              className="btn btn-custom text-center"
+              onClick={() =>
+                handleOpenModal(
+                  "/indo-offline",
+                  indonesiaOfflineTerms
+                )
+              }
+            >
+              Kompetisi Offline<i className="fa-solid fa-earth-americas"></i>
             </a>
           </div>
         </div>
@@ -68,24 +80,24 @@ function HomeIndo() {
         <div className="modal-overlay">
           <div className="modal-content">
             <h2 className="text-4xl">Syarat & Ketentuan</h2>
-            <div>{termsContent}</div> {/* Isi dinamis */}
-            <div className="checkbox mt-2">
+            <div className="m-2">{termsContent}</div> {/* Isi dinamis */}
+            <div className="checkbox">
               <input
                 type="checkbox"
                 id="terms"
                 checked={termsAccepted}
                 onChange={(e) => setTermsAccepted(e.target.checked)}
               />
-              <label htmlFor="terms"> Saya menyetujui Syarat & Ketentuan</label>
+              <label htmlFor="terms">Saya menyetujui Syarat & Ketentuan</label>
             </div>
             <div className="modal-actions">
               <button
-                className="btn btn-secondary"
+                className="btn btn-custom"
                 onClick={() => setShowModal(false)}
               >
                 Kembali
               </button>
-              <button className="btn btn-primary" onClick={handleAccept}>
+              <button className="btn btn-custom" onClick={handleAccept}>
                 Terima & Proses
               </button>
             </div>
@@ -98,3 +110,4 @@ function HomeIndo() {
 }
 
 export default HomeIndo;
+

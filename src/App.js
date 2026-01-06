@@ -31,11 +31,11 @@ import Berita2024 from "./pages/berita/berita2024/Berita2024";
 import Berita2025 from "./pages/berita/berita2025/Berita2025";
 import News2024 from "./pages/berita/News2024";
 import MediaCoverage from "./pages/MediaCoverage";
-
-import HomeRegist from "./pages/registration/homeregist";
 import HomeIndo from "./pages/registration/homeindo";
-import IndonesiaOnline from "./pages/registration/indo-online";
-import Thankyou from "./pages/thankyoupage";
+import IndoOnline from "./pages/registration/indo-online"
+import IndoOffline from "./pages/registration/indo-offline"
+import Thankyou from "./pages/registration/thankyouindo"
+
 
 import Spesial2025 from "./pages/listwinner2025/Spesial2025";
 import Online2025 from "./pages/listwinner2025/Online2025";
@@ -43,10 +43,8 @@ import Offline2025 from "./pages/listwinner2025/Offline2025";
 
 import Report from "./pages/reportjnsf/Report";
 import Report2025 from "./pages/reportjnsf/Report2025";
-
 import Aftereventpage from "./pages/Afterevent/Aftereventpage";
 import Pressrelease2025 from "./pages/Afterevent/Pressrelease2025";
-
 import Kurasipage from "./pages/Kurasi/Kurasipage";
 
 function App() {
@@ -94,10 +92,10 @@ function App() {
             <Route path="/Berita" element={<News2024 />} />
             <Route path="/News2024" element={<Berita2024 />} />
             <Route path="/News2025" element={<Berita2025 />} />
-            <Route path="/homeregist" element={<HomeRegist />} />
             <Route path="/homeindo" element={<HomeIndo />} />
-            <Route path="/indoonline" element={<IndonesiaOnline />} />
-            <Route path="/thankyou" element={<Thankyou />} />
+            <Route path="/indo-online" element={<IndoOnline />} />
+            <Route path="/indo-offline" element={<IndoOffline />} />
+            <Route path="/thankyouindo" element={<Thankyou />} />
 
             <Route path="/Winner2025" element={<Spesial2025 />} />
             <Route path="/Offline2025" element={<Offline2025 />} />

@@ -35,21 +35,8 @@ const Clients = () => {
                             <img src="./assets/logo/navigation-logo.WebP" alt="client" />                            
                         </div> 
                         <div style={clientImage2} className="overflow-hidden p-3 flex justify-center transition-all ease-in-out opacity-50 hover:opacity-100">
-                            <img src="./assets/logo/LOGOKEMENAG.png" alt="client" />                            
+                            <img src="./assets/logo/i3l.WebP" alt="client" />                            
                         </div>                                            
-                    </div>
-                </div>
-                <div className="my-4 py-4">
-                        <h2 className="my-2 text-center text-3xl text-[#101084] uppercase font-bold">Didukung Oleh</h2>
-                        <div className='flex justify-center'>
-                            <div className='w-24 border-b-4 border-[#101084]'></div>
-                        </div>
-                    </div>
-                <div className="p-16" data-aos="fade-in" data-aos-delay="600">
-                    <div className="grid place-items-center">
-                        <div style={clientImage3} className="overflow-hidden p-3 flex justify-center transition-all ease-in-out opacity-50 hover:opacity-100">
-                            <img src="./assets/logo/UniversitasPTIQJakarta.png" alt="client" />                            
-                        </div>                                          
                     </div>
                 </div>
             </section>
