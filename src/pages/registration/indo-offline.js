@@ -412,7 +412,6 @@ function IndonesiaOffline() {
                       Sekolah Menengah (SMP, SMA, MA, MTS atau Sederajat)
                     </option>
                     <option value="Universitas">Universitas</option>
-                    <option value="Dosen atau Guru">Dosen atau Guru</option>
                   </select>
                 </div>
                 <div className="input-box">
