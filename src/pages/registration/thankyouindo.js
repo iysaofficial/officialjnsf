@@ -39,10 +39,8 @@ function ThankYouIndo() {
         <p>
           <strong>*Jika data muncul, tangkap layar halaman ini sebagai bukti pendaftaran berhasil</strong>
         </p>
-        <Link to="/homeindo">
-        <a className="btn btn-custom">
+        <Link to="/homeindo" className="btn btn-custom">
           Kembali ke menu pendaftaran
-        </a>
         </Link>
       </div>
     </section>

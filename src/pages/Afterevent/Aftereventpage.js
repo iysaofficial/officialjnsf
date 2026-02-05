@@ -1,10 +1,6 @@
 import React from "react";
 import NavBar from "../../components/Navbar/NavBar";
 import Footer from "../../components/Footer";
-import img from "../../images/web.svg";
-import img2 from "../../images/app.svg";
-import img3 from "../../images/hosting.svg";
-import img4 from "../../images/consultation.svg";
 
 const Aftereventpage = () => {
   return (
@@ -39,10 +35,10 @@ const Aftereventpage = () => {
                   <h2 className="font-semibold my-4 text-2xl text-center">
                     Press Release 2025
                   </h2>
-                  <a className="font-bold">
+                  <p className="font-bold">
                     {/* Lokasi Venue: {" "}   */}
                     <a href="/Pressrelease2025">Click Here</a>
-                  </a>
+                  </p>
                 </div>
               </div>
               

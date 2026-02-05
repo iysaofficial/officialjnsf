@@ -1,10 +1,6 @@
 import React from "react";
 import NavBar from "../../../components/Navbar/NavBar";
 import Footer from "../../../components/Footer";
-import img from "../../../images/web.svg";
-import img2 from "../../../images/app.svg";
-import img3 from "../../../images/hosting.svg";
-import img4 from "../../../images/consultation.svg";
 
 const Berita2025 = () => {
   return (
@@ -39,15 +35,16 @@ const Berita2025 = () => {
                   <h2 className="font-semibold my-4 text-2xl text-center">
                   Siswi MTsN 19 Jakarta Selatan Raih Medali Emas di Jakarta National Science Fair 2025
                   </h2>
-                  <a className="font-bold">
+                  <p className="font-bold">
                     {/* Lokasi Venue: {" "}   */}
                     <a
                       href="https://dki.kemenag.go.id/berita/siswi-mtsn-19-jakarta-selatan-raih-medali-emas-di-jakarta-national-science-fair-2025-CE19y"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Klik Disini
                     </a>
-                  </a>
+                  </p>
                 </div>
               </div>
 

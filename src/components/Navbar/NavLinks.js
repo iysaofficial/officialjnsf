@@ -33,6 +33,7 @@ const NavLinks = () => {
       <a
         href="/Kurasipage"
         target="_blank"
+        rel="noopener noreferrer"
         className="px-4 font-extrabold text-gray-500 hover:text-[#101084]"
         smooth
       >
@@ -53,6 +54,7 @@ const NavLinks = () => {
       <a
         href="https://drive.google.com/drive/folders/1QGL9JxavpwplBKO-NNhHrDg3wjPaGBUG?usp=sharing"
         target="_blank"
+        rel="noopener noreferrer"
         className="px-4 font-extrabold text-gray-500 hover:text-[#101084]"
         smooth
       >

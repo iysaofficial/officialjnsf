@@ -1,7 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import NavBar from "../components/Navbar/NavBar";
-import heroImg from "../images/web-dev.svg";
 
 const Hero = () => {
   return (
@@ -53,6 +51,7 @@ const Hero = () => {
                 <a
                   href="https://drive.google.com/file/d/14ihYGHgxRUBGsVjuAwyPAXUrRzGGBql8/view?usp=sharing"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="text-white bg-[#101084] hover:bg-blue-900 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0"
                 >
                   Buku Panduan

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
@@ -19,7 +18,7 @@ const Footer = () => {
                                 <p>Ota,</p>
                                 <p>Ogun State.</p>
                             </div> */}
-                <img src="./assets/logo/jnsf.png" />
+                <img src="./assets/logo/jnsf.png" alt="JNSF Logo" />
               </div>
             </div>
 
@@ -64,6 +63,7 @@ const Footer = () => {
                   <a
                     href="https://maps.app.goo.gl/mXBBKFZt5FrXxsmf9"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="text-[#101084] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out"
                   >
                     Jl. Kemang RT 03 RW 06
@@ -73,6 +73,7 @@ const Footer = () => {
                   <a
                     href="mailto:jakartascience.jnsf@gmail.com"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="text-[#101084] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out"
                   >
                     jakartascience.jnsf@gmail.com
@@ -82,6 +83,7 @@ const Footer = () => {
                   <a
                     href="https://wa.me/+6288213248890"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="text-[#101084] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out"
                   >
                     +6288213248890

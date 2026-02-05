@@ -1,10 +1,6 @@
 import React from "react";
 import NavBar from "../../components/Navbar/NavBar";
 import Footer from "../../components/Footer";
-import img from "../../images/web.svg";
-import img2 from "../../images/app.svg";
-import img3 from "../../images/hosting.svg";
-import img4 from "../../images/consultation.svg";
 
 const Online2025 = () => {
   return (
@@ -39,15 +35,16 @@ const Online2025 = () => {
                   <h2 className="font-semibold my-4 text-2xl text-center">
                     Guru
                   </h2>
-                  <a className="font-bold">
+                  <p className="font-bold">
                     {/* Lokasi Venue: {" "}   */}
                     <a
                       href="https://drive.google.com/file/d/1cuo2FSJm95VzkBRc6UYa8B087vIF7TqI/view?usp=drive_link"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Klik Disini
                     </a>
-                  </a>
+                  </p>
                 </div>
               </div>
               <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
@@ -60,15 +57,16 @@ const Online2025 = () => {
                   <h2 className="font-semibold my-4 text-2xl text-center">
                     Universitas
                   </h2>
-                  <a className="font-bold">
+                  <p className="font-bold">
                     {/* Lokasi Venue: {" "}   */}
                     <a
                       href="https://drive.google.com/file/d/14WUNuY6PNnx3fhvTBtua3IqDQSeFeS44/view?usp=sharing"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Klik Disini
                     </a>
-                  </a>
+                  </p>
                 </div>
               </div>
 
@@ -82,15 +80,16 @@ const Online2025 = () => {
                   <h2 className="font-semibold my-4 text-2xl text-center">
                     SMA
                   </h2>
-                  <a className="font-bold">
+                  <p className="font-bold">
                     {/* Lokasi Venue: {" "}   */}
                     <a
                       href="https://drive.google.com/file/d/1-GgOzuNJFEHjpunxgBuo8KxAYW7UzcOw/view?usp=sharing"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Klik Disini
                     </a>
-                  </a>
+                  </p>
                 </div>
               </div>
 
@@ -104,15 +103,16 @@ const Online2025 = () => {
                   <h2 className="font-semibold my-4 text-2xl text-center ">
                     SMP 
                   </h2>
-                  <a className="font-bold">
+                  <p className="font-bold">
                     {/* Lokasi Venue: {" "}   */}
                     <a
                       href="https://drive.google.com/file/d/18CsGAlcmUJItBui8OEfgbnQcf9bImvm-/view?usp=sharing"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Klik Disini
                     </a>
-                  </a>
+                  </p>
                 </div>
               </div>
               <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
@@ -125,15 +125,16 @@ const Online2025 = () => {
                   <h2 className="font-semibold my-4 text-2xl text-center ">
                     SD
                   </h2>
-                  <a className="font-bold">
+                  <p className="font-bold">
                     {/* Lokasi Venue: {" "}   */}
                     <a
                       href="https://drive.google.com/file/d/1whBncIz6g8qARLszRjXV3vrkplqAkBDo/view?usp=sharing"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Klik Disini
                     </a>
-                  </a>
+                  </p>
                 </div>
               </div>
 

@@ -1,10 +1,6 @@
 import React from "react";
 import NavBar from "../../components/Navbar/NavBar";
 import Footer from "../../components/Footer";
-import img from "../../images/web.svg";
-import img2 from "../../images/app.svg";
-import img3 from "../../images/hosting.svg";
-import img4 from "../../images/consultation.svg";
 
 const Spesial = () => {
   return (
@@ -39,15 +35,16 @@ const Spesial = () => {
                   <h2 className="font-semibold my-4 text-2xl text-center">
                     Spesial Award
                   </h2>
-                  <a className="font-bold">
+                  <p className="font-bold">
                     {/* Lokasi Venue: {" "}   */}
                     <a
                       href="https://drive.google.com/file/d/1lcYVJHwuBdnLDiWUCcyRgOHanQlGSGhr/view?usp=sharing"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Klik Disini
                     </a>
-                  </a>
+                  </p>
                 </div>
               </div>
 
@@ -61,14 +58,14 @@ const Spesial = () => {
                   <h2 className="font-semibold my-4 text-2xl text-center">
                     JNSF Offline
                   </h2>
-                  <a className="font-bold">
+                  <p className="font-bold">
                     {/* Lokasi Venue: {" "}   */}
                     <a
                       href="/Offline2024"
                     >
                       Klik Disini
                     </a>
-                  </a>
+                  </p>
                 </div>
               </div>
 
@@ -82,14 +79,14 @@ const Spesial = () => {
                   <h2 className="font-semibold my-4 text-2xl text-center ">
                     JNSF Online
                   </h2>
-                  <a className="font-bold">
+                  <p className="font-bold">
                     {/* Lokasi Venue: {" "}   */}
                     <a
                       href="/Online2024"
                     >
                       Klik Disini
                     </a>
-                  </a>
+                  </p>
                 </div>
               </div>
 

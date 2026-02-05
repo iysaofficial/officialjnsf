@@ -1,6 +1,4 @@
 import React from "react";
-import img from "../images/Web-developer.svg";
-import { Link } from "react-router-dom";
 
 const Timevenue = () => {
   return (
@@ -16,18 +14,19 @@ const Timevenue = () => {
               className="rounded-t float-right mb-5"
               src="./assets/logo/venue.jpg"
             />
-            <a className="font-bold">
-              Lokasi Venue: {" "}  
+            <p className="font-bold">
+              Lokasi Venue:{" "}
               <a
                 href="https://maps.app.goo.gl/vh15YCjxTGiJY7Gy9"
-                target="_blank" 
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                 Klik Disini
+                Klik Disini
               </a>
-            </a>
+            </p>
           </div>
 
-          <div className="lg:w-1/2 flex flex-col lg:mx-4 justify-center lg:w-1/2  px-8">
+          <div className="flex flex-col lg:mx-4 justify-center lg:w-1/2 px-8">
             <img
               alt="card img"
               className="rounded-t float-right mb-5"

@@ -1,10 +1,6 @@
 import React from "react";
 import NavBar from "../../components/Navbar/NavBar";
 import Footer from "../../components/Footer";
-import img from "../../images/web.svg";
-import img2 from "../../images/app.svg";
-import img3 from "../../images/hosting.svg";
-import img4 from "../../images/consultation.svg";
 
 const Online2024 = () => {
   return (
@@ -39,15 +35,16 @@ const Online2024 = () => {
                   <h2 className="font-semibold my-4 text-2xl text-center">
                     Universitas
                   </h2>
-                  <a className="font-bold">
+                  <p className="font-bold">
                     {/* Lokasi Venue: {" "}   */}
                     <a
                       href="https://drive.google.com/file/d/1DzSvqe0NcWyzYUqzGL0NoHkIqdt3QmmH/view?usp=sharing"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Klik Disini
                     </a>
-                  </a>
+                  </p>
                 </div>
               </div>
 
@@ -61,15 +58,16 @@ const Online2024 = () => {
                   <h2 className="font-semibold my-4 text-2xl text-center">
                     SMA
                   </h2>
-                  <a className="font-bold">
+                  <p className="font-bold">
                     {/* Lokasi Venue: {" "}   */}
                     <a
                       href="https://drive.google.com/file/d/1xU9uS_50UpaU42GtLZQ8s8Gorae51EoC/view?usp=sharing"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Klik Disini
                     </a>
-                  </a>
+                  </p>
                 </div>
               </div>
 
@@ -83,15 +81,16 @@ const Online2024 = () => {
                   <h2 className="font-semibold my-4 text-2xl text-center ">
                     SMP 
                   </h2>
-                  <a className="font-bold">
+                  <p className="font-bold">
                     {/* Lokasi Venue: {" "}   */}
                     <a
                       href="https://drive.google.com/file/d/1bjp8HW8z8s8S2RiEZ9Tvlg0OZOzCi9WN/view?usp=sharing"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Klik Disini
                     </a>
-                  </a>
+                  </p>
                 </div>
               </div>
 

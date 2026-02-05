@@ -1,7 +1,7 @@
 import Navigation from "../../components/Navbar/NavBar";
 import Footer from "../../components/Footer";
 import { indonesiaOnlineTerms, indonesiaOfflineTerms } from "../../pages/data/terms";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./registration.css";
 
 
@@ -53,14 +53,18 @@ function HomeIndo() {
           </div>
           <div className="link-web mx-auto text-center">
             <a
+              href="#!"
+              role="button"
               className="btn btn-custom text-center me-lg-5 "
-              onClick={() => handleOpenModal("/indo-online", indonesiaOnlineTerms)}
+              onClick={(e) => { e.preventDefault(); handleOpenModal("/indo-online", indonesiaOnlineTerms); }}
             >
               Kompetisi Online<i className="fa-solid fa-earth-americas"></i>
             </a>
             <a
+              href="#!"
+              role="button"
               className="btn btn-custom text-center me-lg-5 "
-              onClick={() => handleOpenModal("/indo-offline", indonesiaOfflineTerms)}
+              onClick={(e) => { e.preventDefault(); handleOpenModal("/indo-offline", indonesiaOfflineTerms); }}
             >
               Kompetisi Offline<i className="fa-solid fa-earth-americas"></i>
             </a>
@@ -105,7 +109,7 @@ function HomeIndo() {
                 </div>
                 <label htmlFor="terms">
                   Saya telah membaca dan menyetujui{" "}
-                  <a href="#" onClick={(e) => { e.preventDefault(); handleViewTerms(); }}>
+                  <a href="#!" role="button" onClick={(e) => { e.preventDefault(); handleViewTerms(); }}>
                     Syarat & Ketentuan
                   </a>.
                 </label>

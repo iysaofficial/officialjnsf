@@ -1,10 +1,6 @@
 import React from "react";
 import NavBar from "../../../components/Navbar/NavBar";
 import Footer from "../../../components/Footer";
-import img from "../../../images/web.svg";
-import img2 from "../../../images/app.svg";
-import img3 from "../../../images/hosting.svg";
-import img4 from "../../../images/consultation.svg";
 
 const Berita2024 = () => {
   return (
@@ -39,15 +35,16 @@ const Berita2024 = () => {
                   <h2 className="font-semibold my-4 text-2xl text-center">
                   Tiga Event Besar dari IYSA, Diikuti Berbagai Negara
                   </h2>
-                  <a className="font-bold">
+                  <p className="font-bold">
                     {/* Lokasi Venue: {" "}   */}
                     <a
                       href="https://jabaran.id/tiga-event-besar-dari-iysa-diikuti-berbagai-negara/"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Klik Disini
                     </a>
-                  </a>
+                  </p>
                 </div>
               </div>
 
@@ -61,15 +58,16 @@ const Berita2024 = () => {
                   <h2 className="font-semibold my-4 text-2xl text-center">
                   SMPN 1 Ampana Kota, Ikuti Ajang IYSA, JNSF, JISF dan WECC
                   </h2>
-                  <a className="font-bold">
+                  <p className="font-bold">
                     {/* Lokasi Venue: {" "}   */}
                     <a
                       href="https://mercusuar.web.id/touna/smpn-1-ampana-kota-ikuti-ajang-iysa-jnsf-jisf-dan-wecc/"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Klik Disini
                     </a>
-                  </a>
+                  </p>
                 </div>
               </div>
 

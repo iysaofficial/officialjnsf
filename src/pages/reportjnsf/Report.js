@@ -1,10 +1,6 @@
 import React from "react";
 import NavBar from "../../components/Navbar/NavBar";
 import Footer from "../../components/Footer";
-import img from "../../images/web.svg";
-import img2 from "../../images/app.svg";
-import img3 from "../../images/hosting.svg";
-import img4 from "../../images/consultation.svg";
 
 const Report = () => {
   return (
@@ -39,10 +35,10 @@ const Report = () => {
                   <h2 className="font-semibold my-4 text-2xl text-center">
                     JNSF REPORT 2025
                   </h2>
-                  <a className="font-bold">
+                  <p className="font-bold">
                     {/* Lokasi Venue: {" "}   */}
                     <a href="/Report2025">Klik Disini</a>
-                  </a>
+                  </p>
                 </div>
               </div>
               
