@@ -10,10 +10,20 @@ function HomeIndo() {
   const [termsAccepted, setTermsAccepted] = useState(false);
   const [redirectLink, setRedirectLink] = useState("");
   const [termsContent, setTermsContent] = useState("");
+  const [hasViewedTerms, setHasViewedTerms] = useState(false);
+  const [showTooltip, setShowTooltip] = useState(false);
+
   const handleOpenModal = (link, terms) => {
     setRedirectLink(link); // Set link tujuan redirect
     setTermsContent(terms); // Set isi terms sesuai pilihan
+    setTermsAccepted(false); // Reset state persetujuan
+    setHasViewedTerms(false); // Reset state sudah melihat
     setShowModal(true); // Tampilkan modal
+  };
+
+  const handleViewTerms = () => {
+    window.open("https://drive.google.com/file/d/1KOtyI8EZO42INO4Q_IeiTmBQCc_8JtTl/view?usp=sharing", "_blank");
+    setHasViewedTerms(true);
   };
 
   const handleAccept = () => {
@@ -25,13 +35,6 @@ function HomeIndo() {
       alert("Harap setujui Syarat & Ketentuan untuk melanjutkan.");
     }
   };
-
-  useEffect(() => {
-    const hasAcceptedTerms = sessionStorage.getItem("termsAccepted");
-    if (hasAcceptedTerms === "true") {
-      setTermsAccepted(true); // Set status sudah diterima
-    }
-  }, []);
 
   return (
     <>
@@ -48,26 +51,16 @@ function HomeIndo() {
               </h3>
             </div>
           </div>
-          <div className="link-web mx-auto text-center m-5">
+          <div className="link-web mx-auto text-center">
             <a
-              className="btn btn-custom text-center m-5"
-              onClick={() =>
-                handleOpenModal(
-                  "/indo-online",
-                  indonesiaOnlineTerms
-                )
-              }
+              className="btn btn-custom text-center me-lg-5 "
+              onClick={() => handleOpenModal("/indo-online", indonesiaOnlineTerms)}
             >
               Kompetisi Online<i className="fa-solid fa-earth-americas"></i>
             </a>
             <a
-              className="btn btn-custom text-center"
-              onClick={() =>
-                handleOpenModal(
-                  "/indo-offline",
-                  indonesiaOfflineTerms
-                )
-              }
+              className="btn btn-custom text-center me-lg-5 "
+              onClick={() => handleOpenModal("/indo-offline", indonesiaOfflineTerms)}
             >
               Kompetisi Offline<i className="fa-solid fa-earth-americas"></i>
             </a>
@@ -79,27 +72,59 @@ function HomeIndo() {
       {showModal && (
         <div className="modal-overlay">
           <div className="modal-content">
-            <h2 className="text-4xl">Syarat & Ketentuan</h2>
-            <div className="m-2">{termsContent}</div> {/* Isi dinamis */}
-            <div className="checkbox">
-              <input
-                type="checkbox"
-                id="terms"
-                checked={termsAccepted}
-                onChange={(e) => setTermsAccepted(e.target.checked)}
-              />
-              <label htmlFor="terms">Saya menyetujui Syarat & Ketentuan</label>
+            <div className="modal-header">
+              <h2>Syarat & Ketentuan</h2>
+              <button onClick={() => setShowModal(false)} className="modal-close-btn">&times;</button>
             </div>
-            <div className="modal-actions">
-              <button
-                className="btn btn-custom"
-                onClick={() => setShowModal(false)}
-              >
-                Kembali
-              </button>
-              <button className="btn btn-custom" onClick={handleAccept}>
-                Terima & Proses
-              </button>
+            <div className="modal-body">
+              {termsContent}
+              <p>
+                Harap tinjau syarat dan ketentuan dengan cermat sebelum melanjutkan.
+              </p>
+            </div>
+            <div className="modal-footer">
+              <div className="terms-agreement">
+                <div
+                  className="checkbox-wrapper"
+                  onMouseEnter={() => !hasViewedTerms && setShowTooltip(true)}
+                  onMouseLeave={() => setShowTooltip(false)}
+                  onClick={() => !hasViewedTerms && setShowTooltip(!showTooltip)}
+                >
+                  <input
+                    type="checkbox"
+                    id="terms"
+                    checked={termsAccepted}
+                    disabled={!hasViewedTerms}
+                    onChange={(e) => setTermsAccepted(e.target.checked)}
+                  />
+                  {showTooltip && (
+                    <div className="custom-tooltip">
+                      Harap lihat tautan Syarat & Ketentuan terlebih dahulu
+                    </div>
+                  )}
+                </div>
+                <label htmlFor="terms">
+                  Saya telah membaca dan menyetujui{" "}
+                  <a href="#" onClick={(e) => { e.preventDefault(); handleViewTerms(); }}>
+                    Syarat & Ketentuan
+                  </a>.
+                </label>
+              </div>
+              <div className="modal-actions">
+                <button
+                  className="btn btn-secondary"
+                  onClick={() => setShowModal(false)}
+                >
+                  Batal
+                </button>
+                <button
+                  className="btn btn-primary"
+                  onClick={handleAccept}
+                  disabled={!termsAccepted}
+                >
+                  Terima & Lanjutkan
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -110,4 +135,3 @@ function HomeIndo() {
 }
 
 export default HomeIndo;
-
