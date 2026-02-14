@@ -12,6 +12,7 @@ function IndonesiaOffline() {
   const maxSchoolChars = 500; // batasan maksimal karakter
   const maxProjectChars = 160; // batasan maksimal karakter
   const [selectedCategory, setSelectedCategory] = useState("");
+  const [categoryPrice, setCategoryPrice] = useState("");
   const [statusMessage, setStatusMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -47,6 +48,7 @@ function IndonesiaOffline() {
     // Logika untuk menentukan harga berdasarkan kategori yang dipilih
     switch (value) {
       case "Jakarta National Science Fair - Offline Competition":
+        setCategoryPrice("RP 3.150.000");
         break;
       default:
         break;
@@ -115,11 +117,11 @@ function IndonesiaOffline() {
         setTimeout(() => {
           navigate(
             `/thankyouindo?namaLengkap=${encodeURIComponent(
-              selectedMaxNamaLengkap
+              selectedMaxNamaLengkap,
             )}
             &projectTitle=${encodeURIComponent(selectedMaxProject)}
             &category=${encodeURIComponent(selectedCategory)}
-            &namasekolah=${encodeURIComponent(selectedNamaSekolah)}`
+            &namasekolah=${encodeURIComponent(selectedNamaSekolah)}`,
           );
         }, 1000);
       } else {
@@ -190,8 +192,8 @@ function IndonesiaOffline() {
                       {isLoading
                         ? "Mengirim..."
                         : canClick
-                        ? "Lanjutkan"
-                        : `Tunggu... ${countdown}`}
+                          ? "Lanjutkan"
+                          : `Tunggu... ${countdown}`}
                     </button>
                   </div>
                 </div>
@@ -401,7 +403,9 @@ function IndonesiaOffline() {
                     required
                   >
                     <option value="">--Pilih Jenjang Pendidikan Anda--</option>
-                    <option value="Sekolah Dasar atau Sederajat">Sekolah Dasar atau Sederajat</option>
+                    <option value="Sekolah Dasar atau Sederajat">
+                      Sekolah Dasar atau Sederajat
+                    </option>
                     <option value="Sekolah Menengah (SMP, SMA, MA, MTS atau Sederajat)">
                       Sekolah Menengah (SMP, SMA, MA, MTS atau Sederajat)
                     </option>
@@ -580,6 +584,21 @@ function IndonesiaOffline() {
                     placeholder="Masukan Nama Kompetisinya"
                   ></textarea>
                   <div className="mt-5" id="form_alerts"></div>
+                </div>
+                {/* Kolom Harga */}
+                <div className="input-box invisible">
+                  <label htmlFor="CATEGORY_PRICE" className="form-label ">
+                    Registration Price
+                  </label>
+                  <input
+                    type="text"
+                    id="CATEGORY_PRICE"
+                    name="CATEGORY_PRICE"
+                    className="form-control"
+                    value={categoryPrice}
+                    readOnly
+                    placeholder="Harga akan muncul berdasarkan kategori yang dipilih"
+                  />
                 </div>
               </div>
               {/* DETAIL PROJECT END */}
