@@ -30,14 +30,14 @@ const Hero = () => {
               </h1>
               {/* <d addName="text-xl font-semibold tracking-tight mb-5 text-gray-500">We are a team of highly motivated and skilled developers dedicated to delivering only the best software.</div> */}
               <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">
-                <a
+                <button
+                  type="button"
                   className="text-white bg-[#101084] hover:bg-blue-900 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0"
-                  href="#"
                 >
                   Pendaftaran Ditutup
                   <svg
                     className="w-4 h-4 ml-1"
-                    xmlns="http://www.w3.org/2000/sv"
+                    xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -47,7 +47,7 @@ const Hero = () => {
                       clipRule="evenodd"
                     ></path>
                   </svg>
-                </a>
+                </button>
                 {/* <a
                   href="https://drive.google.com/file/d/14ihYGHgxRUBGsVjuAwyPAXUrRzGGBql8/view?usp=sharing"
                   target="_blank"
