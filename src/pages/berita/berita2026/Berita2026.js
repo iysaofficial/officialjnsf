@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "../../../components/Navbar/NavBar";
 import Footer from "../../../components/Footer";
 
-const berita2026 = () => {
+const Berita2026 = () => {
   return (
     <>
       <div>
@@ -30,15 +30,15 @@ const berita2026 = () => {
                   <img
                     alt="card img"
                     className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out"
-                    src="./assets/logo/jnsf2025.jpg"
+                    src="https://res.cloudinary.com/dtik1z1qd/image/upload/v1777865589/jnsf1_m5l8ae.webp"
                   />
                   <h2 className="font-semibold my-4 text-2xl text-center">
-                  Siswi MTsN 19 Jakarta Selatan Raih Medali Emas di Jakarta National Science Fair 2025
+                 Inovasi Sampo dari Batang Pisang, Tim KIR SMA Negeri 2 Cilacap Sabet Medali Perak di JNSF 2026
                   </h2>
                   <p className="font-bold">
                     {/* Lokasi Venue: {" "}   */}
                     <a
-                      href="https://dki.kemenag.go.id/berita/siswi-mtsn-19-jakarta-selatan-raih-medali-emas-di-jakarta-national-science-fair-2025-CE19y"
+                      href="https://garut.pikiran-rakyat.com/pendidikan/pr-5210161866/inovasi-sampo-dari-batang-pisang-tim-kir-sma-negeri-2-cilacap-sabet-medali-perak-di-jnsf-2026"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
