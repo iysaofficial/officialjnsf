@@ -28,7 +28,7 @@ const NavLinks = () => {
         className="px-4 font-extrabold text-gray-500 hover:text-[#101084]"
         to="/ListofWinner"
       >
-        List of Winner
+        Daftar Pemenang
       </HashLink>
       <a
         href="/Kurasipage"
