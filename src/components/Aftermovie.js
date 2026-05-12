@@ -23,8 +23,8 @@ const Aftermovie = () => {
               </div>
               <div className="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
                 <iframe
-                  title="After Movie JNSF 2025"
-                  src="https://youtu.be/tL4wsUFsikM?si=F5XYU_lXfJ2BoGCr"
+                  title="After Movie JNSF 2026"
+                  src="https://www.youtube.com/embed/tL4wsUFsikM?si=F5XYU_lXfJ2BoGCr"
                 ></iframe>
                 {/* <div>
                   <input
