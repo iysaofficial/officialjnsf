@@ -23,15 +23,18 @@ const Intro = () => {
             <h3 className="text-3xl  text-[#101084] font-bold">Tentang JNSF</h3>
             <div>
               <p className="my-3 text-xl text-gray-600 font-semibold">
-                Indonesian Young Scientist Association (IYSA) bekerja sama
-                dengan Kantor Kementrian Agama Provinsi DKI Jakarta
-                mengadakan kompetisi ilmiah bernama “Jakarta National Science
-                Fair” untuk pertama kalinya JNSF diselenggarakan dalam kompetisi
-                Online.
+                Indonesian Young Scientist Association (IYSA) bekerja sama dengan i3L University,
+                Jakarta mengadakan kompetisi ilmiah bernama “Jakarta National Science Fair”
+                untuk kedua kalinya. Di tahun 2026 ini JNSF diselenggarakan secara Hybrid.
+                JNSF muncul sebagai platform bergengsi yang didedikasikan untuk mendorong
+                inovasi dan kolaborasi ilmiah dalam skala global. Menyadari betapa pentingnya
+                kemajuan ilmu pengetahuan dalam mengatasi tantangan kontemporer, JNSF berdiri
+                sebagai mercusuar bagi ilmuwan, peneliti, dan inovator untuk berkumpul dan
+                berbagi penemuan inovatif mereka.
               </p>
             </div>
 
-            <div>
+            {/* <div>
               <p className="my-3 text-xl text-gray-600 font-semibold">
                 JNSF muncul sebagai platform bergengsi yang didedikasikan untuk
                 mendorong inovasi dan kolaborasi ilmiah dalam skala global.
@@ -40,7 +43,7 @@ const Intro = () => {
                 bagi ilmuwan peneliti, dan inovator untuk berkumpul dan berbagi
                 penemuan inovatif mereka.
               </p>
-            </div>
+            </div> */}
             {/* <Link to="/contact" className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-2 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0 group">
                                 Contact us
                                 <svg className="w-4 h-4 ml-1 group-hover: translate-x-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>

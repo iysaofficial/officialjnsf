@@ -51,6 +51,7 @@ import Report2025 from "./pages/reportjnsf/Report2025";
 import Aftereventpage from "./pages/Afterevent/Aftereventpage";
 import Pressrelease2025 from "./pages/Afterevent/Pressrelease2025";
 import Kurasipage from "./pages/Kurasi/Kurasipage";
+import Gallery from "./pages/gallery/Gallery";
 
 function App() {
   useEffect(() => {
@@ -118,6 +119,7 @@ function App() {
             <Route path="/Pressrelease2025" element={<Pressrelease2025 />} />
 
             <Route path="/Kurasipage" element={<Kurasipage />} />
+            <Route path="/Gallery" element={<Gallery />} />
           </Routes>
         </ScrollToTop>
       </Router>
