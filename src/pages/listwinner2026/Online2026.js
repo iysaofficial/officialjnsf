@@ -31,12 +31,12 @@ const Online2026 = () => {
                     alt="card img"
                     className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out"
                     src="./assets/logo/new.jpg"
-                  /> */}
+                  // /> 
                   <h2 className="font-semibold my-4 text-2xl text-center">
                     Guru
                   </h2>
                   <p className="font-bold">
-                    {/* Lokasi Venue: {" "}   */}
+                    Lokasi Venue: {" "}  
                     <a
                       href="https://drive.google.com/file/d/1cuo2FSJm95VzkBRc6UYa8B087vIF7TqI/view?usp=drive_link"
                       target="_blank"
@@ -60,7 +60,7 @@ const Online2026 = () => {
                   <p className="font-bold">
                     {/* Lokasi Venue: {" "}   */}
                     <a
-                      href="https://drive.google.com/file/d/14WUNuY6PNnx3fhvTBtua3IqDQSeFeS44/view?usp=sharing"
+                      href="https://drive.google.com/file/d/1TXpMNGYlpUN3X8bValHJlM6hpMdGudAM/view?usp=sharing"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -83,7 +83,7 @@ const Online2026 = () => {
                   <p className="font-bold">
                     {/* Lokasi Venue: {" "}   */}
                     <a
-                      href="https://drive.google.com/file/d/1-GgOzuNJFEHjpunxgBuo8KxAYW7UzcOw/view?usp=sharing"
+                      href="https://drive.google.com/file/d/156yKeZJSwvuYDAe_Q-YXH5VjEQkGfr4m/view?usp=sharing"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -106,7 +106,7 @@ const Online2026 = () => {
                   <p className="font-bold">
                     {/* Lokasi Venue: {" "}   */}
                     <a
-                      href="https://drive.google.com/file/d/18CsGAlcmUJItBui8OEfgbnQcf9bImvm-/view?usp=sharing"
+                      href="https://drive.google.com/file/d/1y_XwoJYek7uX-kfqHVGhs1PJlVQQ7Yva/view?usp=sharing"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -128,7 +128,7 @@ const Online2026 = () => {
                   <p className="font-bold">
                     {/* Lokasi Venue: {" "}   */}
                     <a
-                      href="https://drive.google.com/file/d/1whBncIz6g8qARLszRjXV3vrkplqAkBDo/view?usp=sharing"
+                      href="https://drive.google.com/file/d/1UV3EZ6_yjZXeDjqzIq0s8ctXMrl6HwWO/view?usp=sharing"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
