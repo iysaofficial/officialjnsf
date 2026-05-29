@@ -48,8 +48,12 @@ import Offline2026 from "./pages/listwinner2026/Offline2026";
 
 import Report from "./pages/reportjnsf/Report";
 import Report2025 from "./pages/reportjnsf/Report2025";
+
 import Aftereventpage from "./pages/Afterevent/Aftereventpage";
+import Pressrelease2026 from "./pages/Afterevent/Pressrelease2026";
 import Pressrelease2025 from "./pages/Afterevent/Pressrelease2025";
+import Pressrelease2024 from "./pages/Afterevent/Pressrelease2024";
+
 import Kurasipage from "./pages/Kurasi/Kurasipage";
 import Gallery from "./pages/gallery/Gallery";
 
@@ -117,6 +121,8 @@ function App() {
 
             <Route path="/Aftereventpage" element={<Aftereventpage />} />
             <Route path="/Pressrelease2025" element={<Pressrelease2025 />} />
+            <Route path="/Pressrelease2026" element={<Pressrelease2026 />} />
+            <Route path="/Pressrelease2024" element={<Pressrelease2024 />} />
 
             <Route path="/Kurasipage" element={<Kurasipage />} />
             <Route path="/Gallery" element={<Gallery />} />
