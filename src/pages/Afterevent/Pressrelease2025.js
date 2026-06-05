@@ -35,7 +35,7 @@ const Pressrelease2025 = () => {
                   <div class="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
                     <iframe
                       title="Press Release 2025"
-                      src="https://drive.google.com/file/d/1bnEHyL8lf9MBsPBl_iCQQEWG1rxdGHRQ/preview"
+                      src="https://drive.google.com/file/d/1bnEHyL8lf9MBsPBl_iCQQEWG1rxdGHRQ/view?usp=sharing"
                     ></iframe>
                   </div>
                   <h2 className="font-semibold my-4 text-2xl text-center">
