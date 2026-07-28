@@ -30,7 +30,7 @@ const Berita2026 = () => {
                   <img
                     alt="card img"
                     className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out"
-                    src="https://res.cloudinary.com/dtik1z1qd/image/upload/v1777865589/jnsf1_m5l8ae.webp"
+                    src="https://ik.imagekit.io/iysaimg/ASSET%20JNSF/jnsf1_m5l8ae.webp?updatedAt=1781963593757"
                   />
                   <h2 className="font-semibold my-4 text-2xl text-center">
                  Inovasi Sampo dari Batang Pisang, Tim KIR SMA Negeri 2 Cilacap Sabet Medali Perak di JNSF 2026
