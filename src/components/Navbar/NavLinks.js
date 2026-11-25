@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { HashLink } from "react-router-hash-link";
+import { usePendaftaran } from "../../lib/pendaftaran";
 
 const NavLinks = () => {
+  // Buku panduan edisi berjalan + menu pendaftaran mengikuti dasbor IYSA.
+  const { identitas, keadaan, guidebook } = usePendaftaran();
   const [isGuideBookOpen, setIsGuideBookOpen] = useState(false);
 
   return (
@@ -66,6 +69,15 @@ const NavLinks = () => {
         Kontak
       </HashLink>
 
+      {keadaan === "buka" && (
+        <HashLink
+          className="px-4 font-extrabold text-gray-500 hover:text-[#101084]"
+          to="/homeindo"
+        >
+          Pendaftaran
+        </HashLink>
+      )}
+
       <div 
         className="relative inline-block"
         onMouseEnter={() => setIsGuideBookOpen(true)}
@@ -82,7 +94,13 @@ const NavLinks = () => {
         </button>
         {isGuideBookOpen && (
           <div className="lg:absolute relative left-0 mt-2 bg-white text-gray-500 lg:shadow-lg rounded-md min-w-[120px] z-50 flex flex-col border lg:border-none">
-            <a href="https://drive.google.com/file/d/14ihYGHgxRUBGsVjuAwyPAXUrRzGGBql8/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-gray-100 hover:text-[#101084] rounded-t-md font-extrabold">2026</a>
+            {guidebook && (
+              <>
+                <a href={guidebook.url} target="_blank" rel="noopener noreferrer" data-iysa-panduan="JNSF" className="block px-4 py-2 hover:bg-gray-100 hover:text-[#101084] font-extrabold" role="menuitem">{identitas?.tahun ?? "Buku Panduan"}</a>
+                <a href={guidebook.url} target="_blank" rel="noopener noreferrer" data-iysa-panduan="JNSF" data-iysa-panduan-jenis="tnc" className="block px-4 py-2 hover:bg-gray-100 hover:text-[#101084] font-extrabold" role="menuitem">Syarat &amp; Ketentuan</a>
+              </>
+            )}
+            {identitas?.tahun !== "2026" && <a href="https://drive.google.com/file/d/14ihYGHgxRUBGsVjuAwyPAXUrRzGGBql8/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-gray-100 hover:text-[#101084] rounded-t-md font-extrabold">2026</a>}
             <a href="https://drive.google.com/file/d/1IsZw9esQLLh8OYR7-0uK6b0R8T8SmLGs/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-gray-100 hover:text-[#101084] font-extrabold">2025</a>
             <a href="https://drive.google.com/file/d/16DyTlLzNwJEc4HTXIzcvoCVLXP5hHMyl/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-gray-100 hover:text-[#101084] font-extrabold">2024</a>
             {/* <a href="https://drive.google.com/" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-gray-100 hover:text-[#101084] rounded-b-md font-extrabold">2023</a> */}

@@ -1,7 +1,13 @@
 import React from "react";
 import NavBar from "../components/Navbar/NavBar";
+import { Link } from "react-router-dom";
+import { usePendaftaran } from "../lib/pendaftaran";
 
 const Hero = () => {
+  // Tombol hero mengikuti dasbor IYSA: daftar hanya saat togel Pendaftaran edisi
+  // menyala, Guide Book + S&K hanya bila guidebook sudah diterbitkan.
+  const { memuat, identitas, keadaan, guidebook } = usePendaftaran();
+  const tahun = identitas?.tahun ?? "";
   return (
     <>
       <div className="hero" id="hero">
@@ -26,15 +32,13 @@ const Hero = () => {
                 Jakarta National Science
               </h1>
               <h1 className="mb-5 mt-1 md:text-5xl text-3xl font-bold text-[#101084]">
-                Fair
+                Fair{tahun ? ` ${tahun}` : ""}
               </h1>
               {/* <d addName="text-xl font-semibold tracking-tight mb-5 text-gray-500">We are a team of highly motivated and skilled developers dedicated to delivering only the best software.</div> */}
               <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">
-                <button
-                  type="button"
-                  className="text-white bg-[#101084] hover:bg-blue-900 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0"
-                >
-                  Pendaftaran Ditutup
+                {memuat ? null : keadaan === "buka" ? (
+                  <Link to="/homeindo" className="text-white bg-[#101084] hover:bg-blue-900 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0">
+                    Daftar Sekarang
                   <svg
                     className="w-4 h-4 ml-1"
                     xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +51,22 @@ const Hero = () => {
                       clipRule="evenodd"
                     ></path>
                   </svg>
-                </button>
+                  </Link>
+                ) : (
+                  <button type="button" disabled className="text-white bg-[#101084] hover:bg-blue-900 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0 cursor-default">
+                    Segera Dibuka{tahun ? ` ${tahun}` : ""}
+                  </button>
+                )}
+                {guidebook && (
+                  <>
+                    <a href={guidebook.url} target="_blank" rel="noopener noreferrer" data-iysa-panduan="JNSF" className="text-white bg-[#101084] hover:bg-blue-900 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0">
+                      Buku Panduan
+                    </a>
+                    <a href={guidebook.url} target="_blank" rel="noopener noreferrer" data-iysa-panduan="JNSF" data-iysa-panduan-jenis="tnc" className="text-white bg-[#101084] hover:bg-blue-900 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0">
+                      Syarat & Ketentuan
+                    </a>
+                  </>
+                )}
                 {/* <a
                   href="https://drive.google.com/file/d/14ihYGHgxRUBGsVjuAwyPAXUrRzGGBql8/view?usp=sharing"
                   target="_blank"

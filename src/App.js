@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./index.css";
@@ -33,8 +33,6 @@ import Berita2026 from "./pages/berita/berita2026/Berita2026";
 import News2024 from "./pages/berita/News2024";
 import MediaCoverage from "./pages/MediaCoverage";
 import HomeIndo from "./pages/registration/homeindo";
-import IndoOnline from "./pages/registration/indo-online"
-import IndoOffline from "./pages/registration/indo-offline"
 import Thankyou from "./pages/registration/thankyouindo"
 
 
@@ -104,8 +102,10 @@ function App() {
             <Route path="/News2025" element={<Berita2025 />} />
             <Route path="/News2026" element={<Berita2026 />} />
             <Route path="/homeindo" element={<HomeIndo />} />
-            <Route path="/indo-online" element={<IndoOnline />} />
-            <Route path="/indo-offline" element={<IndoOffline />} />
+            <Route path="/homeregist" element={<Navigate to="/homeindo" replace />} />
+            {/* Formulir Google Apps Script lama → formulir dasbor IYSA (daftar.js). */}
+            <Route path="/indo-online" element={<Navigate to="/homeindo" replace />} />
+            <Route path="/indo-offline" element={<Navigate to="/homeindo" replace />} />
             <Route path="/thankyouindo" element={<Thankyou />} />
 
             <Route path="/Winner2025" element={<Spesial2025 />} />
